@@ -63,64 +63,64 @@ Partial Class Cashier
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnEspre = New System.Windows.Forms.Button()
         Me.pnlTea = New System.Windows.Forms.Panel()
-        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Icedtea = New System.Windows.Forms.Panel()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
-        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.matchalatte = New System.Windows.Forms.Panel()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Button15 = New System.Windows.Forms.Button()
-        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.earlgrey = New System.Windows.Forms.Panel()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Button16 = New System.Windows.Forms.Button()
-        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.greentea = New System.Windows.Forms.Panel()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.pnlMIlk = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.smoothie = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.raspmilkshake = New System.Windows.Forms.Panel()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.caramilkshake = New System.Windows.Forms.Panel()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.vanillamilk = New System.Windows.Forms.Panel()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.pnlChocolate = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.chocofrappe = New System.Windows.Forms.Panel()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.whitechoco = New System.Windows.Forms.Panel()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.chocomocha = New System.Windows.Forms.Panel()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.hotchoco = New System.Windows.Forms.Panel()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
@@ -142,20 +142,20 @@ Partial Class Cashier
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.pnlTea.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.Panel19.SuspendLayout()
-        Me.Panel20.SuspendLayout()
+        Me.Icedtea.SuspendLayout()
+        Me.matchalatte.SuspendLayout()
+        Me.earlgrey.SuspendLayout()
+        Me.greentea.SuspendLayout()
         Me.pnlMIlk.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel9.SuspendLayout()
+        Me.smoothie.SuspendLayout()
+        Me.raspmilkshake.SuspendLayout()
+        Me.caramilkshake.SuspendLayout()
+        Me.vanillamilk.SuspendLayout()
         Me.pnlChocolate.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        Me.Panel11.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel13.SuspendLayout()
+        Me.chocofrappe.SuspendLayout()
+        Me.whitechoco.SuspendLayout()
+        Me.chocomocha.SuspendLayout()
+        Me.hotchoco.SuspendLayout()
         Me.pnlOrder.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -422,6 +422,7 @@ Partial Class Cashier
         'btnIcedCof
         '
         Me.btnIcedCof.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIcedCof.Image = Global.Log_In.My.Resources.Resources.Iced_coffee
         Me.btnIcedCof.Location = New System.Drawing.Point(5, 6)
         Me.btnIcedCof.Name = "btnIcedCof"
         Me.btnIcedCof.Size = New System.Drawing.Size(143, 180)
@@ -471,6 +472,7 @@ Partial Class Cashier
         'btnCappu
         '
         Me.btnCappu.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCappu.Image = Global.Log_In.My.Resources.Resources.Cappuccino
         Me.btnCappu.Location = New System.Drawing.Point(5, 6)
         Me.btnCappu.Name = "btnCappu"
         Me.btnCappu.Size = New System.Drawing.Size(143, 180)
@@ -520,6 +522,7 @@ Partial Class Cashier
         'btnAme
         '
         Me.btnAme.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAme.Image = Global.Log_In.My.Resources.Resources.Americano
         Me.btnAme.Location = New System.Drawing.Point(5, 6)
         Me.btnAme.Name = "btnAme"
         Me.btnAme.Size = New System.Drawing.Size(143, 180)
@@ -569,6 +572,7 @@ Partial Class Cashier
         'btnEspre
         '
         Me.btnEspre.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEspre.Image = Global.Log_In.My.Resources.Resources.Espresso
         Me.btnEspre.Location = New System.Drawing.Point(5, 7)
         Me.btnEspre.Name = "btnEspre"
         Me.btnEspre.Size = New System.Drawing.Size(143, 180)
@@ -577,25 +581,25 @@ Partial Class Cashier
         '
         'pnlTea
         '
-        Me.pnlTea.Controls.Add(Me.Panel17)
-        Me.pnlTea.Controls.Add(Me.Panel18)
-        Me.pnlTea.Controls.Add(Me.Panel19)
-        Me.pnlTea.Controls.Add(Me.Panel20)
+        Me.pnlTea.Controls.Add(Me.Icedtea)
+        Me.pnlTea.Controls.Add(Me.matchalatte)
+        Me.pnlTea.Controls.Add(Me.earlgrey)
+        Me.pnlTea.Controls.Add(Me.greentea)
         Me.pnlTea.Location = New System.Drawing.Point(141, 106)
         Me.pnlTea.Name = "pnlTea"
         Me.pnlTea.Size = New System.Drawing.Size(670, 283)
         Me.pnlTea.TabIndex = 4
         '
-        'Panel17
+        'Icedtea
         '
-        Me.Panel17.Controls.Add(Me.Label38)
-        Me.Panel17.Controls.Add(Me.Label39)
-        Me.Panel17.Controls.Add(Me.Label40)
-        Me.Panel17.Controls.Add(Me.Button14)
-        Me.Panel17.Location = New System.Drawing.Point(506, 12)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(154, 256)
-        Me.Panel17.TabIndex = 46
+        Me.Icedtea.Controls.Add(Me.Label38)
+        Me.Icedtea.Controls.Add(Me.Label39)
+        Me.Icedtea.Controls.Add(Me.Label40)
+        Me.Icedtea.Controls.Add(Me.Button14)
+        Me.Icedtea.Location = New System.Drawing.Point(506, 12)
+        Me.Icedtea.Name = "Icedtea"
+        Me.Icedtea.Size = New System.Drawing.Size(154, 256)
+        Me.Icedtea.TabIndex = 46
         '
         'Label38
         '
@@ -629,22 +633,23 @@ Partial Class Cashier
         'Button14
         '
         Me.Button14.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Image = Global.Log_In.My.Resources.Resources.Lemon_iced_tea
         Me.Button14.Location = New System.Drawing.Point(5, 6)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(143, 180)
         Me.Button14.TabIndex = 29
         Me.Button14.UseVisualStyleBackColor = True
         '
-        'Panel18
+        'matchalatte
         '
-        Me.Panel18.Controls.Add(Me.Label41)
-        Me.Panel18.Controls.Add(Me.Label42)
-        Me.Panel18.Controls.Add(Me.Label43)
-        Me.Panel18.Controls.Add(Me.Button15)
-        Me.Panel18.Location = New System.Drawing.Point(341, 12)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(154, 256)
-        Me.Panel18.TabIndex = 45
+        Me.matchalatte.Controls.Add(Me.Label41)
+        Me.matchalatte.Controls.Add(Me.Label42)
+        Me.matchalatte.Controls.Add(Me.Label43)
+        Me.matchalatte.Controls.Add(Me.Button15)
+        Me.matchalatte.Location = New System.Drawing.Point(341, 12)
+        Me.matchalatte.Name = "matchalatte"
+        Me.matchalatte.Size = New System.Drawing.Size(154, 256)
+        Me.matchalatte.TabIndex = 45
         '
         'Label41
         '
@@ -678,22 +683,23 @@ Partial Class Cashier
         'Button15
         '
         Me.Button15.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.Image = Global.Log_In.My.Resources.Resources.Matcha_latte
         Me.Button15.Location = New System.Drawing.Point(5, 6)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(143, 180)
         Me.Button15.TabIndex = 29
         Me.Button15.UseVisualStyleBackColor = True
         '
-        'Panel19
+        'earlgrey
         '
-        Me.Panel19.Controls.Add(Me.Label44)
-        Me.Panel19.Controls.Add(Me.Label45)
-        Me.Panel19.Controls.Add(Me.Label46)
-        Me.Panel19.Controls.Add(Me.Button16)
-        Me.Panel19.Location = New System.Drawing.Point(176, 12)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(154, 256)
-        Me.Panel19.TabIndex = 45
+        Me.earlgrey.Controls.Add(Me.Label44)
+        Me.earlgrey.Controls.Add(Me.Label45)
+        Me.earlgrey.Controls.Add(Me.Label46)
+        Me.earlgrey.Controls.Add(Me.Button16)
+        Me.earlgrey.Location = New System.Drawing.Point(176, 12)
+        Me.earlgrey.Name = "earlgrey"
+        Me.earlgrey.Size = New System.Drawing.Size(154, 256)
+        Me.earlgrey.TabIndex = 45
         '
         'Label44
         '
@@ -727,22 +733,23 @@ Partial Class Cashier
         'Button16
         '
         Me.Button16.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button16.Image = Global.Log_In.My.Resources.Resources.Earl_grey
         Me.Button16.Location = New System.Drawing.Point(5, 6)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(143, 180)
         Me.Button16.TabIndex = 29
         Me.Button16.UseVisualStyleBackColor = True
         '
-        'Panel20
+        'greentea
         '
-        Me.Panel20.Controls.Add(Me.Label47)
-        Me.Panel20.Controls.Add(Me.Label48)
-        Me.Panel20.Controls.Add(Me.Label49)
-        Me.Panel20.Controls.Add(Me.Button17)
-        Me.Panel20.Location = New System.Drawing.Point(11, 12)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(154, 256)
-        Me.Panel20.TabIndex = 44
+        Me.greentea.Controls.Add(Me.Label47)
+        Me.greentea.Controls.Add(Me.Label48)
+        Me.greentea.Controls.Add(Me.Label49)
+        Me.greentea.Controls.Add(Me.Button17)
+        Me.greentea.Location = New System.Drawing.Point(11, 12)
+        Me.greentea.Name = "greentea"
+        Me.greentea.Size = New System.Drawing.Size(154, 256)
+        Me.greentea.TabIndex = 44
         '
         'Label47
         '
@@ -776,6 +783,7 @@ Partial Class Cashier
         'Button17
         '
         Me.Button17.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button17.Image = Global.Log_In.My.Resources.Resources.Green_tea
         Me.Button17.Location = New System.Drawing.Point(5, 7)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(143, 180)
@@ -784,25 +792,25 @@ Partial Class Cashier
         '
         'pnlMIlk
         '
-        Me.pnlMIlk.Controls.Add(Me.Panel6)
-        Me.pnlMIlk.Controls.Add(Me.Panel7)
-        Me.pnlMIlk.Controls.Add(Me.Panel8)
-        Me.pnlMIlk.Controls.Add(Me.Panel9)
+        Me.pnlMIlk.Controls.Add(Me.smoothie)
+        Me.pnlMIlk.Controls.Add(Me.raspmilkshake)
+        Me.pnlMIlk.Controls.Add(Me.caramilkshake)
+        Me.pnlMIlk.Controls.Add(Me.vanillamilk)
         Me.pnlMIlk.Location = New System.Drawing.Point(141, 106)
         Me.pnlMIlk.Name = "pnlMIlk"
         Me.pnlMIlk.Size = New System.Drawing.Size(670, 283)
         Me.pnlMIlk.TabIndex = 5
         '
-        'Panel6
+        'smoothie
         '
-        Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Controls.Add(Me.Label15)
-        Me.Panel6.Controls.Add(Me.Label16)
-        Me.Panel6.Controls.Add(Me.Button4)
-        Me.Panel6.Location = New System.Drawing.Point(506, 12)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(154, 256)
-        Me.Panel6.TabIndex = 46
+        Me.smoothie.Controls.Add(Me.Label14)
+        Me.smoothie.Controls.Add(Me.Label15)
+        Me.smoothie.Controls.Add(Me.Label16)
+        Me.smoothie.Controls.Add(Me.Button4)
+        Me.smoothie.Location = New System.Drawing.Point(506, 12)
+        Me.smoothie.Name = "smoothie"
+        Me.smoothie.Size = New System.Drawing.Size(154, 256)
+        Me.smoothie.TabIndex = 46
         '
         'Label14
         '
@@ -836,22 +844,23 @@ Partial Class Cashier
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Image = Global.Log_In.My.Resources.Resources.Smoothie
         Me.Button4.Location = New System.Drawing.Point(5, 6)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(143, 180)
         Me.Button4.TabIndex = 29
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Panel7
+        'raspmilkshake
         '
-        Me.Panel7.Controls.Add(Me.Label17)
-        Me.Panel7.Controls.Add(Me.Label18)
-        Me.Panel7.Controls.Add(Me.Label19)
-        Me.Panel7.Controls.Add(Me.Button5)
-        Me.Panel7.Location = New System.Drawing.Point(341, 12)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(154, 256)
-        Me.Panel7.TabIndex = 45
+        Me.raspmilkshake.Controls.Add(Me.Label17)
+        Me.raspmilkshake.Controls.Add(Me.Label18)
+        Me.raspmilkshake.Controls.Add(Me.Label19)
+        Me.raspmilkshake.Controls.Add(Me.Button5)
+        Me.raspmilkshake.Location = New System.Drawing.Point(341, 12)
+        Me.raspmilkshake.Name = "raspmilkshake"
+        Me.raspmilkshake.Size = New System.Drawing.Size(154, 256)
+        Me.raspmilkshake.TabIndex = 45
         '
         'Label17
         '
@@ -885,22 +894,23 @@ Partial Class Cashier
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Image = Global.Log_In.My.Resources.Resources.Raspberry_milkshake
         Me.Button5.Location = New System.Drawing.Point(5, 6)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(143, 180)
         Me.Button5.TabIndex = 29
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Panel8
+        'caramilkshake
         '
-        Me.Panel8.Controls.Add(Me.Label20)
-        Me.Panel8.Controls.Add(Me.Label21)
-        Me.Panel8.Controls.Add(Me.Label22)
-        Me.Panel8.Controls.Add(Me.Button7)
-        Me.Panel8.Location = New System.Drawing.Point(176, 12)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(154, 256)
-        Me.Panel8.TabIndex = 45
+        Me.caramilkshake.Controls.Add(Me.Label20)
+        Me.caramilkshake.Controls.Add(Me.Label21)
+        Me.caramilkshake.Controls.Add(Me.Label22)
+        Me.caramilkshake.Controls.Add(Me.Button7)
+        Me.caramilkshake.Location = New System.Drawing.Point(176, 12)
+        Me.caramilkshake.Name = "caramilkshake"
+        Me.caramilkshake.Size = New System.Drawing.Size(154, 256)
+        Me.caramilkshake.TabIndex = 45
         '
         'Label20
         '
@@ -927,29 +937,30 @@ Partial Class Cashier
         Me.Label22.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.Location = New System.Drawing.Point(12, 201)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(131, 16)
+        Me.Label22.Size = New System.Drawing.Size(104, 32)
         Me.Label22.TabIndex = 52
-        Me.Label22.Text = "CARAMEL MILK"
+        Me.Label22.Text = "CARAMEL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MILKSHAKE"
         '
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Image = Global.Log_In.My.Resources.Resources.Caramel_milkshake
         Me.Button7.Location = New System.Drawing.Point(5, 6)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(143, 180)
         Me.Button7.TabIndex = 29
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Panel9
+        'vanillamilk
         '
-        Me.Panel9.Controls.Add(Me.Label23)
-        Me.Panel9.Controls.Add(Me.Label24)
-        Me.Panel9.Controls.Add(Me.Label25)
-        Me.Panel9.Controls.Add(Me.Button9)
-        Me.Panel9.Location = New System.Drawing.Point(11, 12)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(154, 256)
-        Me.Panel9.TabIndex = 44
+        Me.vanillamilk.Controls.Add(Me.Label23)
+        Me.vanillamilk.Controls.Add(Me.Label24)
+        Me.vanillamilk.Controls.Add(Me.Label25)
+        Me.vanillamilk.Controls.Add(Me.Button9)
+        Me.vanillamilk.Location = New System.Drawing.Point(11, 12)
+        Me.vanillamilk.Name = "vanillamilk"
+        Me.vanillamilk.Size = New System.Drawing.Size(154, 256)
+        Me.vanillamilk.TabIndex = 44
         '
         'Label23
         '
@@ -983,6 +994,7 @@ Partial Class Cashier
         'Button9
         '
         Me.Button9.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Image = Global.Log_In.My.Resources.Resources.Vanilla_milk
         Me.Button9.Location = New System.Drawing.Point(5, 7)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(143, 180)
@@ -991,25 +1003,25 @@ Partial Class Cashier
         '
         'pnlChocolate
         '
-        Me.pnlChocolate.Controls.Add(Me.Panel10)
-        Me.pnlChocolate.Controls.Add(Me.Panel11)
-        Me.pnlChocolate.Controls.Add(Me.Panel12)
-        Me.pnlChocolate.Controls.Add(Me.Panel13)
+        Me.pnlChocolate.Controls.Add(Me.chocofrappe)
+        Me.pnlChocolate.Controls.Add(Me.whitechoco)
+        Me.pnlChocolate.Controls.Add(Me.chocomocha)
+        Me.pnlChocolate.Controls.Add(Me.hotchoco)
         Me.pnlChocolate.Location = New System.Drawing.Point(141, 106)
         Me.pnlChocolate.Name = "pnlChocolate"
         Me.pnlChocolate.Size = New System.Drawing.Size(670, 283)
         Me.pnlChocolate.TabIndex = 6
         '
-        'Panel10
+        'chocofrappe
         '
-        Me.Panel10.Controls.Add(Me.Label26)
-        Me.Panel10.Controls.Add(Me.Label27)
-        Me.Panel10.Controls.Add(Me.Label28)
-        Me.Panel10.Controls.Add(Me.Button10)
-        Me.Panel10.Location = New System.Drawing.Point(506, 12)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(154, 256)
-        Me.Panel10.TabIndex = 46
+        Me.chocofrappe.Controls.Add(Me.Label26)
+        Me.chocofrappe.Controls.Add(Me.Label27)
+        Me.chocofrappe.Controls.Add(Me.Label28)
+        Me.chocofrappe.Controls.Add(Me.Button10)
+        Me.chocofrappe.Location = New System.Drawing.Point(506, 12)
+        Me.chocofrappe.Name = "chocofrappe"
+        Me.chocofrappe.Size = New System.Drawing.Size(154, 256)
+        Me.chocofrappe.TabIndex = 46
         '
         'Label26
         '
@@ -1043,22 +1055,23 @@ Partial Class Cashier
         'Button10
         '
         Me.Button10.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Image = Global.Log_In.My.Resources.Resources.Chocolate_frappe
         Me.Button10.Location = New System.Drawing.Point(5, 6)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(143, 180)
         Me.Button10.TabIndex = 29
         Me.Button10.UseVisualStyleBackColor = True
         '
-        'Panel11
+        'whitechoco
         '
-        Me.Panel11.Controls.Add(Me.Label29)
-        Me.Panel11.Controls.Add(Me.Label30)
-        Me.Panel11.Controls.Add(Me.Label31)
-        Me.Panel11.Controls.Add(Me.Button11)
-        Me.Panel11.Location = New System.Drawing.Point(341, 12)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(154, 256)
-        Me.Panel11.TabIndex = 45
+        Me.whitechoco.Controls.Add(Me.Label29)
+        Me.whitechoco.Controls.Add(Me.Label30)
+        Me.whitechoco.Controls.Add(Me.Label31)
+        Me.whitechoco.Controls.Add(Me.Button11)
+        Me.whitechoco.Location = New System.Drawing.Point(341, 12)
+        Me.whitechoco.Name = "whitechoco"
+        Me.whitechoco.Size = New System.Drawing.Size(154, 256)
+        Me.whitechoco.TabIndex = 45
         '
         'Label29
         '
@@ -1092,22 +1105,23 @@ Partial Class Cashier
         'Button11
         '
         Me.Button11.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Image = Global.Log_In.My.Resources.Resources.White_hot_chocolate
         Me.Button11.Location = New System.Drawing.Point(5, 6)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(143, 180)
         Me.Button11.TabIndex = 29
         Me.Button11.UseVisualStyleBackColor = True
         '
-        'Panel12
+        'chocomocha
         '
-        Me.Panel12.Controls.Add(Me.Label32)
-        Me.Panel12.Controls.Add(Me.Label33)
-        Me.Panel12.Controls.Add(Me.Label34)
-        Me.Panel12.Controls.Add(Me.Button12)
-        Me.Panel12.Location = New System.Drawing.Point(176, 12)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(154, 256)
-        Me.Panel12.TabIndex = 45
+        Me.chocomocha.Controls.Add(Me.Label32)
+        Me.chocomocha.Controls.Add(Me.Label33)
+        Me.chocomocha.Controls.Add(Me.Label34)
+        Me.chocomocha.Controls.Add(Me.Button12)
+        Me.chocomocha.Location = New System.Drawing.Point(176, 12)
+        Me.chocomocha.Name = "chocomocha"
+        Me.chocomocha.Size = New System.Drawing.Size(154, 256)
+        Me.chocomocha.TabIndex = 45
         '
         'Label32
         '
@@ -1141,22 +1155,23 @@ Partial Class Cashier
         'Button12
         '
         Me.Button12.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Image = Global.Log_In.My.Resources.Resources.Chocolate_mocha
         Me.Button12.Location = New System.Drawing.Point(5, 6)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(143, 180)
         Me.Button12.TabIndex = 29
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'Panel13
+        'hotchoco
         '
-        Me.Panel13.Controls.Add(Me.Label35)
-        Me.Panel13.Controls.Add(Me.Label36)
-        Me.Panel13.Controls.Add(Me.Label37)
-        Me.Panel13.Controls.Add(Me.Button13)
-        Me.Panel13.Location = New System.Drawing.Point(11, 12)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(154, 256)
-        Me.Panel13.TabIndex = 44
+        Me.hotchoco.Controls.Add(Me.Label35)
+        Me.hotchoco.Controls.Add(Me.Label36)
+        Me.hotchoco.Controls.Add(Me.Label37)
+        Me.hotchoco.Controls.Add(Me.Button13)
+        Me.hotchoco.Location = New System.Drawing.Point(11, 12)
+        Me.hotchoco.Name = "hotchoco"
+        Me.hotchoco.Size = New System.Drawing.Size(154, 256)
+        Me.hotchoco.TabIndex = 44
         '
         'Label35
         '
@@ -1190,6 +1205,7 @@ Partial Class Cashier
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Image = Global.Log_In.My.Resources.Resources.Hot_chocolate
         Me.Button13.Location = New System.Drawing.Point(5, 7)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(143, 180)
@@ -1292,32 +1308,32 @@ Partial Class Cashier
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.pnlTea.ResumeLayout(False)
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel17.PerformLayout()
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel18.PerformLayout()
-        Me.Panel19.ResumeLayout(False)
-        Me.Panel19.PerformLayout()
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel20.PerformLayout()
+        Me.Icedtea.ResumeLayout(False)
+        Me.Icedtea.PerformLayout()
+        Me.matchalatte.ResumeLayout(False)
+        Me.matchalatte.PerformLayout()
+        Me.earlgrey.ResumeLayout(False)
+        Me.earlgrey.PerformLayout()
+        Me.greentea.ResumeLayout(False)
+        Me.greentea.PerformLayout()
         Me.pnlMIlk.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
+        Me.smoothie.ResumeLayout(False)
+        Me.smoothie.PerformLayout()
+        Me.raspmilkshake.ResumeLayout(False)
+        Me.raspmilkshake.PerformLayout()
+        Me.caramilkshake.ResumeLayout(False)
+        Me.caramilkshake.PerformLayout()
+        Me.vanillamilk.ResumeLayout(False)
+        Me.vanillamilk.PerformLayout()
         Me.pnlChocolate.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
-        Me.Panel11.ResumeLayout(False)
-        Me.Panel11.PerformLayout()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel13.PerformLayout()
+        Me.chocofrappe.ResumeLayout(False)
+        Me.chocofrappe.PerformLayout()
+        Me.whitechoco.ResumeLayout(False)
+        Me.whitechoco.PerformLayout()
+        Me.chocomocha.ResumeLayout(False)
+        Me.chocomocha.PerformLayout()
+        Me.hotchoco.ResumeLayout(False)
+        Me.hotchoco.PerformLayout()
         Me.pnlOrder.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -1359,64 +1375,64 @@ Partial Class Cashier
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents pnlTea As Panel
-    Friend WithEvents Panel17 As Panel
+    Friend WithEvents Icedtea As Panel
     Friend WithEvents Label38 As Label
     Friend WithEvents Label39 As Label
     Friend WithEvents Label40 As Label
     Friend WithEvents Button14 As Button
-    Friend WithEvents Panel18 As Panel
+    Friend WithEvents matchalatte As Panel
     Friend WithEvents Label41 As Label
     Friend WithEvents Label42 As Label
     Friend WithEvents Label43 As Label
     Friend WithEvents Button15 As Button
-    Friend WithEvents Panel19 As Panel
+    Friend WithEvents earlgrey As Panel
     Friend WithEvents Label44 As Label
     Friend WithEvents Label45 As Label
     Friend WithEvents Label46 As Label
     Friend WithEvents Button16 As Button
-    Friend WithEvents Panel20 As Panel
+    Friend WithEvents greentea As Panel
     Friend WithEvents Label47 As Label
     Friend WithEvents Label48 As Label
     Friend WithEvents Label49 As Label
     Friend WithEvents Button17 As Button
     Friend WithEvents pnlMIlk As Panel
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents smoothie As Panel
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Button4 As Button
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents raspmilkshake As Panel
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Button5 As Button
-    Friend WithEvents Panel8 As Panel
+    Friend WithEvents caramilkshake As Panel
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents Button7 As Button
-    Friend WithEvents Panel9 As Panel
+    Friend WithEvents vanillamilk As Panel
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Button9 As Button
     Friend WithEvents pnlChocolate As Panel
-    Friend WithEvents Panel10 As Panel
+    Friend WithEvents chocofrappe As Panel
     Friend WithEvents Label26 As Label
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
     Friend WithEvents Button10 As Button
-    Friend WithEvents Panel11 As Panel
+    Friend WithEvents whitechoco As Panel
     Friend WithEvents Label29 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Button11 As Button
-    Friend WithEvents Panel12 As Panel
+    Friend WithEvents chocomocha As Panel
     Friend WithEvents Label32 As Label
     Friend WithEvents Label33 As Label
     Friend WithEvents Label34 As Label
     Friend WithEvents Button12 As Button
-    Friend WithEvents Panel13 As Panel
+    Friend WithEvents hotchoco As Panel
     Friend WithEvents Label35 As Label
     Friend WithEvents Label36 As Label
     Friend WithEvents Label37 As Label

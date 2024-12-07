@@ -226,5 +226,47 @@
   <ItemGroup>
     <None Include="Resources\3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espresso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Americano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cappuccino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iced coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lemon iced tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matcha latte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earl grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smoothie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raspberry milkshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caramel milkshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanilla milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate frappe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White hot chocolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate mocha.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
