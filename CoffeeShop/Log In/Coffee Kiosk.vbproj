@@ -91,29 +91,11 @@
     <Compile Include="CashierCheckout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChocoMenu.Designer.vb">
-      <DependentUpon>ChocoMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChocoMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CoffeeMenu.Designer.vb">
-      <DependentUpon>CoffeeMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CoffeeMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LogIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogIn.Designer.vb">
       <DependentUpon>LogIn.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MilkMenu.Designer.vb">
-      <DependentUpon>MilkMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MilkMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -151,12 +133,6 @@
     <Compile Include="Stocks.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeaMenu.Designer.vb">
-      <DependentUpon>TeaMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TeaMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Users.Designer.vb">
       <DependentUpon>Users.vb</DependentUpon>
     </Compile>
@@ -174,17 +150,8 @@
     <EmbeddedResource Include="CashierCheckout.resx">
       <DependentUpon>CashierCheckout.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChocoMenu.resx">
-      <DependentUpon>ChocoMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CoffeeMenu.resx">
-      <DependentUpon>CoffeeMenu.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MilkMenu.resx">
-      <DependentUpon>MilkMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -197,9 +164,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stocks.resx">
       <DependentUpon>Stocks.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeaMenu.resx">
-      <DependentUpon>TeaMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.vb</DependentUpon>
