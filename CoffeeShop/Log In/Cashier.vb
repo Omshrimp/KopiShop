@@ -63,4 +63,13 @@
     Private Sub btnEspre_Click(sender As Object, e As EventArgs) Handles btnEspre.Click
 
     End Sub
+
+    Private Sub Cashier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Close()
+        Administrator.Show()
+    End Sub
 End Class

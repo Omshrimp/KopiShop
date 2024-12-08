@@ -2,20 +2,55 @@
 
 Public Class Administrator
     Dim Toggle As Boolean
-    Private Sub lblUsers_Click(sender As Object, e As EventArgs) Handles lblUsers.Click
+
+    Private Sub Administrator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call panel()
+        If LoggedInUserRole = "ADMIN" Then
+            pbUsers.Enabled = True
+            pbCashier.Enabled = True
+            pbStocks.Enabled = True
+            lblUsers.Enabled = True
+            lblCashier.Enabled = True
+            lblStocks.Enabled = True
+        ElseIf LoggedInUserRole = "CASHIER" Then
+            pbUsers.Enabled = False
+            pbCashier.Enabled = True
+            pbStocks.Enabled = False
+            lblUsers.Enabled = False
+            lblCashier.Enabled = True
+            lblStocks.Enabled = False
+        End If
+    End Sub
+    Sub lblUsers_Click(sender As Object, e As EventArgs) Handles lblUsers.Click
+        If LoggedInUserRole <> "Admin" Then
+            MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
         Users.Show()
         Me.Close()
     End Sub
     Private Sub pbUsers_Click(sender As Object, e As EventArgs) Handles pbUsers.Click
+        If LoggedInUserRole <> "Admin" Then
+            MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
         Users.Show()
         Me.Close()
     End Sub
 
     Private Sub lblStocks_Click(sender As Object, e As EventArgs) Handles lblStocks.Click
+        If LoggedInUserRole <> "Admin" Then
+            MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
         Stocks.Show()
         Me.Close()
     End Sub
     Private Sub pbStocks_Click(sender As Object, e As EventArgs) Handles pbStocks.Click
+        If LoggedInUserRole <> "Admin" Then
+            MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
         Stocks.Show()
         Me.Close()
     End Sub
@@ -28,20 +63,6 @@ Public Class Administrator
     Private Sub pbCashier_Click(sender As Object, e As EventArgs) Handles pbCashier.Click
         Cashier.Show()
         Me.Close()
-    End Sub
-
-    Private Sub lblReports_Click(sender As Object, e As EventArgs) Handles lblReports.Click
-        Reports.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub pbReports_Click(sender As Object, e As EventArgs) Handles pbReports.Click
-        Reports.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub Administrator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call panel()
     End Sub
 
     Private Sub btnToggle_Click(sender As Object, e As EventArgs) Handles btnToggle.Click

@@ -57,7 +57,7 @@ Partial Class LogIn
         Me.cboRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboRole.Font = New System.Drawing.Font("Garamond", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboRole.FormattingEnabled = True
-        Me.cboRole.Items.AddRange(New Object() {"ADMIN", "STAFF"})
+        Me.cboRole.Items.AddRange(New Object() {"ADMIN", "CASHIER"})
         Me.cboRole.Location = New System.Drawing.Point(174, 217)
         Me.cboRole.Name = "cboRole"
         Me.cboRole.Size = New System.Drawing.Size(248, 27)

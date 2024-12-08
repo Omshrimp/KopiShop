@@ -30,7 +30,7 @@ Public Class LogIn
             ElseIf cboRole.Text = "ADMIN" Then
                 Administrator.Show()
                 Me.Hide()
-            ElseIf cboRole.Text = "STAFF" Then
+            ElseIf cboRole.Text = "CASHIER" Then
                 Cashier.Show()
                 Me.Hide()
             Else

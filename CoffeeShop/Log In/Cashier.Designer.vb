@@ -166,18 +166,20 @@ Partial Class Cashier
         Me.pnlOption.Controls.Add(Me.rbDineIn)
         Me.pnlOption.Controls.Add(Me.btnCheckout)
         Me.pnlOption.Controls.Add(Me.btnCancelOrder)
-        Me.pnlOption.Location = New System.Drawing.Point(141, 507)
+        Me.pnlOption.Location = New System.Drawing.Point(188, 624)
+        Me.pnlOption.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlOption.Name = "pnlOption"
-        Me.pnlOption.Size = New System.Drawing.Size(670, 65)
+        Me.pnlOption.Size = New System.Drawing.Size(893, 80)
         Me.pnlOption.TabIndex = 3
         '
         'rbTakeOut
         '
         Me.rbTakeOut.AutoSize = True
-        Me.rbTakeOut.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbTakeOut.Location = New System.Drawing.Point(121, 22)
+        Me.rbTakeOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbTakeOut.Location = New System.Drawing.Point(161, 27)
+        Me.rbTakeOut.Margin = New System.Windows.Forms.Padding(4)
         Me.rbTakeOut.Name = "rbTakeOut"
-        Me.rbTakeOut.Size = New System.Drawing.Size(106, 20)
+        Me.rbTakeOut.Size = New System.Drawing.Size(137, 29)
         Me.rbTakeOut.TabIndex = 8
         Me.rbTakeOut.TabStop = True
         Me.rbTakeOut.Text = "TAKEOUT"
@@ -186,10 +188,11 @@ Partial Class Cashier
         'rbDineIn
         '
         Me.rbDineIn.AutoSize = True
-        Me.rbDineIn.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbDineIn.Location = New System.Drawing.Point(9, 22)
+        Me.rbDineIn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbDineIn.Location = New System.Drawing.Point(12, 27)
+        Me.rbDineIn.Margin = New System.Windows.Forms.Padding(4)
         Me.rbDineIn.Name = "rbDineIn"
-        Me.rbDineIn.Size = New System.Drawing.Size(94, 20)
+        Me.rbDineIn.Size = New System.Drawing.Size(110, 29)
         Me.rbDineIn.TabIndex = 7
         Me.rbDineIn.TabStop = True
         Me.rbDineIn.Text = "DINE IN"
@@ -197,20 +200,22 @@ Partial Class Cashier
         '
         'btnCheckout
         '
-        Me.btnCheckout.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheckout.Location = New System.Drawing.Point(459, 10)
+        Me.btnCheckout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCheckout.Location = New System.Drawing.Point(612, 12)
+        Me.btnCheckout.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCheckout.Name = "btnCheckout"
-        Me.btnCheckout.Size = New System.Drawing.Size(194, 44)
+        Me.btnCheckout.Size = New System.Drawing.Size(259, 54)
         Me.btnCheckout.TabIndex = 1
         Me.btnCheckout.Text = "PROCEED CHECKOUT"
         Me.btnCheckout.UseVisualStyleBackColor = True
         '
         'btnCancelOrder
         '
-        Me.btnCancelOrder.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelOrder.Location = New System.Drawing.Point(243, 10)
+        Me.btnCancelOrder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelOrder.Location = New System.Drawing.Point(324, 12)
+        Me.btnCancelOrder.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancelOrder.Name = "btnCancelOrder"
-        Me.btnCancelOrder.Size = New System.Drawing.Size(194, 44)
+        Me.btnCancelOrder.Size = New System.Drawing.Size(259, 54)
         Me.btnCancelOrder.TabIndex = 0
         Me.btnCancelOrder.Text = "CANCEL ORDER"
         Me.btnCancelOrder.UseVisualStyleBackColor = True
@@ -226,8 +231,9 @@ Partial Class Cashier
         Me.pnlLeft.Controls.Add(Me.btnCoffee)
         Me.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.pnlLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlLeft.Name = "pnlLeft"
-        Me.pnlLeft.Size = New System.Drawing.Size(135, 597)
+        Me.pnlLeft.Size = New System.Drawing.Size(180, 735)
         Me.pnlLeft.TabIndex = 2
         '
         'btnProducts
@@ -235,10 +241,11 @@ Partial Class Cashier
         Me.btnProducts.BackColor = System.Drawing.Color.Transparent
         Me.btnProducts.FlatAppearance.BorderSize = 0
         Me.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProducts.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProducts.Location = New System.Drawing.Point(-3, 333)
+        Me.btnProducts.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProducts.Location = New System.Drawing.Point(-4, 410)
+        Me.btnProducts.Margin = New System.Windows.Forms.Padding(4)
         Me.btnProducts.Name = "btnProducts"
-        Me.btnProducts.Size = New System.Drawing.Size(135, 44)
+        Me.btnProducts.Size = New System.Drawing.Size(180, 54)
         Me.btnProducts.TabIndex = 50
         Me.btnProducts.Text = "PRODUCTS"
         Me.btnProducts.UseVisualStyleBackColor = False
@@ -246,9 +253,10 @@ Partial Class Cashier
         'pnlOnBtnPosition
         '
         Me.pnlOnBtnPosition.BackColor = System.Drawing.Color.SaddleBrown
-        Me.pnlOnBtnPosition.Location = New System.Drawing.Point(0, 99)
+        Me.pnlOnBtnPosition.Location = New System.Drawing.Point(0, 122)
+        Me.pnlOnBtnPosition.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlOnBtnPosition.Name = "pnlOnBtnPosition"
-        Me.pnlOnBtnPosition.Size = New System.Drawing.Size(11, 44)
+        Me.pnlOnBtnPosition.Size = New System.Drawing.Size(15, 54)
         Me.pnlOnBtnPosition.TabIndex = 44
         '
         'btnMilk
@@ -256,10 +264,11 @@ Partial Class Cashier
         Me.btnMilk.BackColor = System.Drawing.Color.Transparent
         Me.btnMilk.FlatAppearance.BorderSize = 0
         Me.btnMilk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMilk.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMilk.Location = New System.Drawing.Point(0, 222)
+        Me.btnMilk.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMilk.Location = New System.Drawing.Point(0, 273)
+        Me.btnMilk.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMilk.Name = "btnMilk"
-        Me.btnMilk.Size = New System.Drawing.Size(135, 44)
+        Me.btnMilk.Size = New System.Drawing.Size(180, 54)
         Me.btnMilk.TabIndex = 49
         Me.btnMilk.Text = "MILK"
         Me.btnMilk.UseVisualStyleBackColor = False
@@ -269,10 +278,11 @@ Partial Class Cashier
         Me.btnChoco.BackColor = System.Drawing.Color.Transparent
         Me.btnChoco.FlatAppearance.BorderSize = 0
         Me.btnChoco.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnChoco.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnChoco.Location = New System.Drawing.Point(0, 283)
+        Me.btnChoco.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnChoco.Location = New System.Drawing.Point(0, 348)
+        Me.btnChoco.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoco.Name = "btnChoco"
-        Me.btnChoco.Size = New System.Drawing.Size(135, 44)
+        Me.btnChoco.Size = New System.Drawing.Size(180, 54)
         Me.btnChoco.TabIndex = 47
         Me.btnChoco.Text = "CHOCOLATE"
         Me.btnChoco.UseVisualStyleBackColor = False
@@ -282,10 +292,11 @@ Partial Class Cashier
         Me.btnTea.BackColor = System.Drawing.Color.Transparent
         Me.btnTea.FlatAppearance.BorderSize = 0
         Me.btnTea.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTea.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTea.Location = New System.Drawing.Point(0, 161)
+        Me.btnTea.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTea.Location = New System.Drawing.Point(0, 198)
+        Me.btnTea.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTea.Name = "btnTea"
-        Me.btnTea.Size = New System.Drawing.Size(135, 44)
+        Me.btnTea.Size = New System.Drawing.Size(180, 54)
         Me.btnTea.TabIndex = 45
         Me.btnTea.Text = "TEA"
         Me.btnTea.UseVisualStyleBackColor = False
@@ -295,10 +306,11 @@ Partial Class Cashier
         Me.btnCoffee.BackColor = System.Drawing.Color.Transparent
         Me.btnCoffee.FlatAppearance.BorderSize = 0
         Me.btnCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCoffee.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCoffee.Location = New System.Drawing.Point(0, 100)
+        Me.btnCoffee.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCoffee.Location = New System.Drawing.Point(0, 123)
+        Me.btnCoffee.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCoffee.Name = "btnCoffee"
-        Me.btnCoffee.Size = New System.Drawing.Size(135, 44)
+        Me.btnCoffee.Size = New System.Drawing.Size(180, 54)
         Me.btnCoffee.TabIndex = 5
         Me.btnCoffee.Text = "COFFEE"
         Me.btnCoffee.UseVisualStyleBackColor = False
@@ -307,19 +319,21 @@ Partial Class Cashier
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("quaver", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(202, 33)
+        Me.Label1.Location = New System.Drawing.Point(269, 41)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(367, 53)
+        Me.Label1.Size = New System.Drawing.Size(501, 76)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "COFFEE TALK"
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(6, 12)
+        Me.Button6.Location = New System.Drawing.Point(8, 13)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 36)
+        Me.Button6.Size = New System.Drawing.Size(84, 33)
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "HOME"
         Me.Button6.UseVisualStyleBackColor = True
@@ -330,9 +344,10 @@ Partial Class Cashier
         Me.pnlTop.Controls.Add(Me.Button6)
         Me.pnlTop.Controls.Add(Me.Label1)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlTop.Location = New System.Drawing.Point(135, 0)
+        Me.pnlTop.Location = New System.Drawing.Point(180, 0)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(853, 100)
+        Me.pnlTop.Size = New System.Drawing.Size(1137, 123)
         Me.pnlTop.TabIndex = 0
         '
         'pnlCoffee
@@ -345,37 +360,42 @@ Partial Class Cashier
         Me.pnlCoffee.Controls.Add(Me.Panel3)
         Me.pnlCoffee.Controls.Add(Me.Panel2)
         Me.pnlCoffee.Controls.Add(Me.Panel1)
-        Me.pnlCoffee.Location = New System.Drawing.Point(141, 106)
+        Me.pnlCoffee.Location = New System.Drawing.Point(188, 130)
+        Me.pnlCoffee.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlCoffee.Name = "pnlCoffee"
-        Me.pnlCoffee.Size = New System.Drawing.Size(835, 283)
+        Me.pnlCoffee.Size = New System.Drawing.Size(1113, 348)
         Me.pnlCoffee.TabIndex = 1
         '
         'lblEspresso
         '
-        Me.lblEspresso.Location = New System.Drawing.Point(724, 116)
+        Me.lblEspresso.Location = New System.Drawing.Point(965, 143)
+        Me.lblEspresso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEspresso.Name = "lblEspresso"
-        Me.lblEspresso.Size = New System.Drawing.Size(100, 23)
+        Me.lblEspresso.Size = New System.Drawing.Size(133, 28)
         Me.lblEspresso.TabIndex = 57
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(715, 81)
+        Me.TextBox2.Location = New System.Drawing.Point(953, 100)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(132, 22)
         Me.TextBox2.TabIndex = 48
         '
         'txtAme
         '
-        Me.txtAme.Location = New System.Drawing.Point(715, 55)
+        Me.txtAme.Location = New System.Drawing.Point(953, 68)
+        Me.txtAme.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAme.Name = "txtAme"
-        Me.txtAme.Size = New System.Drawing.Size(100, 20)
+        Me.txtAme.Size = New System.Drawing.Size(132, 22)
         Me.txtAme.TabIndex = 47
         '
         'txtEspresso
         '
-        Me.txtEspresso.Location = New System.Drawing.Point(715, 17)
+        Me.txtEspresso.Location = New System.Drawing.Point(953, 21)
+        Me.txtEspresso.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEspresso.Name = "txtEspresso"
-        Me.txtEspresso.Size = New System.Drawing.Size(100, 20)
+        Me.txtEspresso.Size = New System.Drawing.Size(132, 22)
         Me.txtEspresso.TabIndex = 7
         Me.txtEspresso.Text = "0"
         '
@@ -385,47 +405,52 @@ Partial Class Cashier
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Controls.Add(Me.Label5)
         Me.Panel5.Controls.Add(Me.btnIcedCof)
-        Me.Panel5.Location = New System.Drawing.Point(506, 12)
+        Me.Panel5.Location = New System.Drawing.Point(675, 15)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(154, 256)
+        Me.Panel5.Size = New System.Drawing.Size(205, 315)
         Me.Panel5.TabIndex = 46
         '
         'Label12
         '
         Me.Label12.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(7, 230)
+        Me.Label12.Location = New System.Drawing.Point(9, 283)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(21, 22)
+        Me.Label12.Size = New System.Drawing.Size(28, 27)
         Me.Label12.TabIndex = 60
         Me.Label12.Text = "₱ "
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(26, 236)
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(35, 290)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(34, 16)
+        Me.Label13.Size = New System.Drawing.Size(48, 25)
         Me.Label13.TabIndex = 59
         Me.Label13.Text = "105"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 201)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(11, 247)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(114, 16)
+        Me.Label5.Size = New System.Drawing.Size(156, 25)
         Me.Label5.TabIndex = 54
         Me.Label5.Text = "ICED COFFEE"
         '
         'btnIcedCof
         '
-        Me.btnIcedCof.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIcedCof.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIcedCof.Image = Global.Log_In.My.Resources.Resources.Iced_coffee
-        Me.btnIcedCof.Location = New System.Drawing.Point(5, 6)
+        Me.btnIcedCof.Location = New System.Drawing.Point(7, 7)
+        Me.btnIcedCof.Margin = New System.Windows.Forms.Padding(4)
         Me.btnIcedCof.Name = "btnIcedCof"
-        Me.btnIcedCof.Size = New System.Drawing.Size(143, 180)
+        Me.btnIcedCof.Size = New System.Drawing.Size(191, 222)
         Me.btnIcedCof.TabIndex = 29
         Me.btnIcedCof.UseVisualStyleBackColor = True
         '
@@ -435,47 +460,52 @@ Partial Class Cashier
         Me.Panel3.Controls.Add(Me.Label11)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.btnCappu)
-        Me.Panel3.Location = New System.Drawing.Point(341, 12)
+        Me.Panel3.Location = New System.Drawing.Point(455, 15)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(154, 256)
+        Me.Panel3.Size = New System.Drawing.Size(205, 315)
         Me.Panel3.TabIndex = 45
         '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(8, 230)
+        Me.Label10.Location = New System.Drawing.Point(11, 283)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(21, 22)
+        Me.Label10.Size = New System.Drawing.Size(28, 27)
         Me.Label10.TabIndex = 58
         Me.Label10.Text = "₱ "
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(27, 236)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(36, 290)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(34, 16)
+        Me.Label11.Size = New System.Drawing.Size(48, 25)
         Me.Label11.TabIndex = 57
         Me.Label11.Text = "105"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(9, 201)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 247)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 16)
+        Me.Label4.Size = New System.Drawing.Size(156, 25)
         Me.Label4.TabIndex = 53
         Me.Label4.Text = "CAPPUCCINO"
         '
         'btnCappu
         '
-        Me.btnCappu.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCappu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCappu.Image = Global.Log_In.My.Resources.Resources.Cappuccino
-        Me.btnCappu.Location = New System.Drawing.Point(5, 6)
+        Me.btnCappu.Location = New System.Drawing.Point(7, 7)
+        Me.btnCappu.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCappu.Name = "btnCappu"
-        Me.btnCappu.Size = New System.Drawing.Size(143, 180)
+        Me.btnCappu.Size = New System.Drawing.Size(191, 222)
         Me.btnCappu.TabIndex = 29
         Me.btnCappu.UseVisualStyleBackColor = True
         '
@@ -485,47 +515,52 @@ Partial Class Cashier
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.btnAme)
-        Me.Panel2.Location = New System.Drawing.Point(176, 12)
+        Me.Panel2.Location = New System.Drawing.Point(235, 15)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(154, 256)
+        Me.Panel2.Size = New System.Drawing.Size(205, 315)
         Me.Panel2.TabIndex = 45
         '
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(11, 229)
+        Me.Label7.Location = New System.Drawing.Point(15, 282)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(21, 22)
+        Me.Label7.Size = New System.Drawing.Size(28, 27)
         Me.Label7.TabIndex = 54
         Me.Label7.Text = "₱ "
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(30, 235)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(40, 289)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 16)
+        Me.Label6.Size = New System.Drawing.Size(36, 25)
         Me.Label6.TabIndex = 53
         Me.Label6.Text = "79"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 201)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(16, 247)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(104, 16)
+        Me.Label3.Size = New System.Drawing.Size(142, 25)
         Me.Label3.TabIndex = 52
         Me.Label3.Text = "AMERICANO"
         '
         'btnAme
         '
-        Me.btnAme.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAme.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAme.Image = Global.Log_In.My.Resources.Resources.Americano
-        Me.btnAme.Location = New System.Drawing.Point(5, 6)
+        Me.btnAme.Location = New System.Drawing.Point(7, 7)
+        Me.btnAme.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAme.Name = "btnAme"
-        Me.btnAme.Size = New System.Drawing.Size(143, 180)
+        Me.btnAme.Size = New System.Drawing.Size(191, 222)
         Me.btnAme.TabIndex = 29
         Me.btnAme.UseVisualStyleBackColor = True
         '
@@ -535,47 +570,52 @@ Partial Class Cashier
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.btnEspre)
-        Me.Panel1.Location = New System.Drawing.Point(11, 12)
+        Me.Panel1.Location = New System.Drawing.Point(15, 15)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(154, 256)
+        Me.Panel1.Size = New System.Drawing.Size(205, 315)
         Me.Panel1.TabIndex = 44
         '
         'Label8
         '
         Me.Label8.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 230)
+        Me.Label8.Location = New System.Drawing.Point(8, 283)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(21, 22)
+        Me.Label8.Size = New System.Drawing.Size(28, 27)
         Me.Label8.TabIndex = 56
         Me.Label8.Text = "₱ "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(5, 201)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(7, 247)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 16)
+        Me.Label2.Size = New System.Drawing.Size(130, 25)
         Me.Label2.TabIndex = 51
         Me.Label2.Text = "ESPRESSO"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(25, 236)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(33, 290)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(29, 16)
+        Me.Label9.Size = New System.Drawing.Size(36, 25)
         Me.Label9.TabIndex = 55
         Me.Label9.Text = "79"
         '
         'btnEspre
         '
-        Me.btnEspre.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEspre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEspre.Image = Global.Log_In.My.Resources.Resources.Espresso
-        Me.btnEspre.Location = New System.Drawing.Point(5, 7)
+        Me.btnEspre.Location = New System.Drawing.Point(7, 9)
+        Me.btnEspre.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEspre.Name = "btnEspre"
-        Me.btnEspre.Size = New System.Drawing.Size(143, 180)
+        Me.btnEspre.Size = New System.Drawing.Size(191, 222)
         Me.btnEspre.TabIndex = 29
         Me.btnEspre.UseVisualStyleBackColor = True
         '
@@ -585,9 +625,10 @@ Partial Class Cashier
         Me.pnlTea.Controls.Add(Me.matchalatte)
         Me.pnlTea.Controls.Add(Me.earlgrey)
         Me.pnlTea.Controls.Add(Me.greentea)
-        Me.pnlTea.Location = New System.Drawing.Point(141, 106)
+        Me.pnlTea.Location = New System.Drawing.Point(188, 130)
+        Me.pnlTea.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlTea.Name = "pnlTea"
-        Me.pnlTea.Size = New System.Drawing.Size(670, 283)
+        Me.pnlTea.Size = New System.Drawing.Size(893, 348)
         Me.pnlTea.TabIndex = 4
         '
         'Icedtea
@@ -596,47 +637,52 @@ Partial Class Cashier
         Me.Icedtea.Controls.Add(Me.Label39)
         Me.Icedtea.Controls.Add(Me.Label40)
         Me.Icedtea.Controls.Add(Me.Button14)
-        Me.Icedtea.Location = New System.Drawing.Point(506, 12)
+        Me.Icedtea.Location = New System.Drawing.Point(675, 15)
+        Me.Icedtea.Margin = New System.Windows.Forms.Padding(4)
         Me.Icedtea.Name = "Icedtea"
-        Me.Icedtea.Size = New System.Drawing.Size(154, 256)
+        Me.Icedtea.Size = New System.Drawing.Size(205, 315)
         Me.Icedtea.TabIndex = 46
         '
         'Label38
         '
         Me.Label38.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(7, 230)
+        Me.Label38.Location = New System.Drawing.Point(9, 283)
+        Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(21, 22)
+        Me.Label38.Size = New System.Drawing.Size(28, 27)
         Me.Label38.TabIndex = 60
         Me.Label38.Text = "₱ "
         '
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(26, 236)
+        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(35, 290)
+        Me.Label39.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(34, 16)
+        Me.Label39.Size = New System.Drawing.Size(48, 25)
         Me.Label39.TabIndex = 59
         Me.Label39.Text = "105"
         '
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(8, 201)
+        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(11, 247)
+        Me.Label40.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(109, 32)
+        Me.Label40.Size = New System.Drawing.Size(145, 50)
         Me.Label40.TabIndex = 54
         Me.Label40.Text = "LEMON ICED" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "TEA"
         '
         'Button14
         '
-        Me.Button14.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Image = Global.Log_In.My.Resources.Resources.Lemon_iced_tea
-        Me.Button14.Location = New System.Drawing.Point(5, 6)
+        Me.Button14.Location = New System.Drawing.Point(7, 7)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(143, 180)
+        Me.Button14.Size = New System.Drawing.Size(191, 222)
         Me.Button14.TabIndex = 29
         Me.Button14.UseVisualStyleBackColor = True
         '
@@ -646,47 +692,52 @@ Partial Class Cashier
         Me.matchalatte.Controls.Add(Me.Label42)
         Me.matchalatte.Controls.Add(Me.Label43)
         Me.matchalatte.Controls.Add(Me.Button15)
-        Me.matchalatte.Location = New System.Drawing.Point(341, 12)
+        Me.matchalatte.Location = New System.Drawing.Point(455, 15)
+        Me.matchalatte.Margin = New System.Windows.Forms.Padding(4)
         Me.matchalatte.Name = "matchalatte"
-        Me.matchalatte.Size = New System.Drawing.Size(154, 256)
+        Me.matchalatte.Size = New System.Drawing.Size(205, 315)
         Me.matchalatte.TabIndex = 45
         '
         'Label41
         '
         Me.Label41.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(8, 230)
+        Me.Label41.Location = New System.Drawing.Point(11, 283)
+        Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(21, 22)
+        Me.Label41.Size = New System.Drawing.Size(28, 27)
         Me.Label41.TabIndex = 58
         Me.Label41.Text = "₱ "
         '
         'Label42
         '
         Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(27, 236)
+        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(36, 290)
+        Me.Label42.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(34, 16)
+        Me.Label42.Size = New System.Drawing.Size(48, 25)
         Me.Label42.TabIndex = 57
         Me.Label42.Text = "105"
         '
         'Label43
         '
         Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.Location = New System.Drawing.Point(9, 201)
+        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(12, 247)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(139, 16)
+        Me.Label43.Size = New System.Drawing.Size(180, 25)
         Me.Label43.TabIndex = 53
         Me.Label43.Text = "MATCHA LATTE"
         '
         'Button15
         '
-        Me.Button15.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Image = Global.Log_In.My.Resources.Resources.Matcha_latte
-        Me.Button15.Location = New System.Drawing.Point(5, 6)
+        Me.Button15.Location = New System.Drawing.Point(7, 7)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(143, 180)
+        Me.Button15.Size = New System.Drawing.Size(191, 222)
         Me.Button15.TabIndex = 29
         Me.Button15.UseVisualStyleBackColor = True
         '
@@ -696,47 +747,52 @@ Partial Class Cashier
         Me.earlgrey.Controls.Add(Me.Label45)
         Me.earlgrey.Controls.Add(Me.Label46)
         Me.earlgrey.Controls.Add(Me.Button16)
-        Me.earlgrey.Location = New System.Drawing.Point(176, 12)
+        Me.earlgrey.Location = New System.Drawing.Point(235, 15)
+        Me.earlgrey.Margin = New System.Windows.Forms.Padding(4)
         Me.earlgrey.Name = "earlgrey"
-        Me.earlgrey.Size = New System.Drawing.Size(154, 256)
+        Me.earlgrey.Size = New System.Drawing.Size(205, 315)
         Me.earlgrey.TabIndex = 45
         '
         'Label44
         '
         Me.Label44.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.Location = New System.Drawing.Point(11, 229)
+        Me.Label44.Location = New System.Drawing.Point(15, 282)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(21, 22)
+        Me.Label44.Size = New System.Drawing.Size(28, 27)
         Me.Label44.TabIndex = 54
         Me.Label44.Text = "₱ "
         '
         'Label45
         '
         Me.Label45.AutoSize = True
-        Me.Label45.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(30, 235)
+        Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(40, 289)
+        Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(29, 16)
+        Me.Label45.Size = New System.Drawing.Size(36, 25)
         Me.Label45.TabIndex = 53
         Me.Label45.Text = "79"
         '
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(12, 201)
+        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(16, 247)
+        Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(109, 32)
+        Me.Label46.Size = New System.Drawing.Size(137, 50)
         Me.Label46.TabIndex = 52
         Me.Label46.Text = "EARL GREY " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "TEA"
         '
         'Button16
         '
-        Me.Button16.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Image = Global.Log_In.My.Resources.Resources.Earl_grey
-        Me.Button16.Location = New System.Drawing.Point(5, 6)
+        Me.Button16.Location = New System.Drawing.Point(7, 7)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(4)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(143, 180)
+        Me.Button16.Size = New System.Drawing.Size(191, 222)
         Me.Button16.TabIndex = 29
         Me.Button16.UseVisualStyleBackColor = True
         '
@@ -746,47 +802,52 @@ Partial Class Cashier
         Me.greentea.Controls.Add(Me.Label48)
         Me.greentea.Controls.Add(Me.Label49)
         Me.greentea.Controls.Add(Me.Button17)
-        Me.greentea.Location = New System.Drawing.Point(11, 12)
+        Me.greentea.Location = New System.Drawing.Point(15, 15)
+        Me.greentea.Margin = New System.Windows.Forms.Padding(4)
         Me.greentea.Name = "greentea"
-        Me.greentea.Size = New System.Drawing.Size(154, 256)
+        Me.greentea.Size = New System.Drawing.Size(205, 315)
         Me.greentea.TabIndex = 44
         '
         'Label47
         '
         Me.Label47.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(6, 230)
+        Me.Label47.Location = New System.Drawing.Point(8, 283)
+        Me.Label47.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(21, 22)
+        Me.Label47.Size = New System.Drawing.Size(28, 27)
         Me.Label47.TabIndex = 56
         Me.Label47.Text = "₱ "
         '
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label48.Location = New System.Drawing.Point(5, 201)
+        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Location = New System.Drawing.Point(7, 247)
+        Me.Label48.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(104, 16)
+        Me.Label48.Size = New System.Drawing.Size(134, 25)
         Me.Label48.TabIndex = 51
         Me.Label48.Text = "GREEN TEA"
         '
         'Label49
         '
         Me.Label49.AutoSize = True
-        Me.Label49.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.Location = New System.Drawing.Point(25, 236)
+        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.Location = New System.Drawing.Point(33, 290)
+        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(29, 16)
+        Me.Label49.Size = New System.Drawing.Size(36, 25)
         Me.Label49.TabIndex = 55
         Me.Label49.Text = "79"
         '
         'Button17
         '
-        Me.Button17.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Image = Global.Log_In.My.Resources.Resources.Green_tea
-        Me.Button17.Location = New System.Drawing.Point(5, 7)
+        Me.Button17.Location = New System.Drawing.Point(7, 9)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(143, 180)
+        Me.Button17.Size = New System.Drawing.Size(191, 222)
         Me.Button17.TabIndex = 29
         Me.Button17.UseVisualStyleBackColor = True
         '
@@ -796,9 +857,10 @@ Partial Class Cashier
         Me.pnlMIlk.Controls.Add(Me.raspmilkshake)
         Me.pnlMIlk.Controls.Add(Me.caramilkshake)
         Me.pnlMIlk.Controls.Add(Me.vanillamilk)
-        Me.pnlMIlk.Location = New System.Drawing.Point(141, 106)
+        Me.pnlMIlk.Location = New System.Drawing.Point(188, 130)
+        Me.pnlMIlk.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlMIlk.Name = "pnlMIlk"
-        Me.pnlMIlk.Size = New System.Drawing.Size(670, 283)
+        Me.pnlMIlk.Size = New System.Drawing.Size(893, 348)
         Me.pnlMIlk.TabIndex = 5
         '
         'smoothie
@@ -807,47 +869,52 @@ Partial Class Cashier
         Me.smoothie.Controls.Add(Me.Label15)
         Me.smoothie.Controls.Add(Me.Label16)
         Me.smoothie.Controls.Add(Me.Button4)
-        Me.smoothie.Location = New System.Drawing.Point(506, 12)
+        Me.smoothie.Location = New System.Drawing.Point(675, 15)
+        Me.smoothie.Margin = New System.Windows.Forms.Padding(4)
         Me.smoothie.Name = "smoothie"
-        Me.smoothie.Size = New System.Drawing.Size(154, 256)
+        Me.smoothie.Size = New System.Drawing.Size(205, 315)
         Me.smoothie.TabIndex = 46
         '
         'Label14
         '
         Me.Label14.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(7, 230)
+        Me.Label14.Location = New System.Drawing.Point(9, 283)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(21, 22)
+        Me.Label14.Size = New System.Drawing.Size(28, 27)
         Me.Label14.TabIndex = 60
         Me.Label14.Text = "₱ "
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(26, 236)
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(35, 290)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(34, 16)
+        Me.Label15.Size = New System.Drawing.Size(48, 25)
         Me.Label15.TabIndex = 59
         Me.Label15.Text = "125"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(8, 201)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(11, 247)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(97, 16)
+        Me.Label16.Size = New System.Drawing.Size(128, 25)
         Me.Label16.TabIndex = 54
         Me.Label16.Text = "SMOOTHIE"
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Image = Global.Log_In.My.Resources.Resources.Smoothie
-        Me.Button4.Location = New System.Drawing.Point(5, 6)
+        Me.Button4.Location = New System.Drawing.Point(7, 7)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(143, 180)
+        Me.Button4.Size = New System.Drawing.Size(191, 222)
         Me.Button4.TabIndex = 29
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -857,47 +924,52 @@ Partial Class Cashier
         Me.raspmilkshake.Controls.Add(Me.Label18)
         Me.raspmilkshake.Controls.Add(Me.Label19)
         Me.raspmilkshake.Controls.Add(Me.Button5)
-        Me.raspmilkshake.Location = New System.Drawing.Point(341, 12)
+        Me.raspmilkshake.Location = New System.Drawing.Point(455, 15)
+        Me.raspmilkshake.Margin = New System.Windows.Forms.Padding(4)
         Me.raspmilkshake.Name = "raspmilkshake"
-        Me.raspmilkshake.Size = New System.Drawing.Size(154, 256)
+        Me.raspmilkshake.Size = New System.Drawing.Size(205, 315)
         Me.raspmilkshake.TabIndex = 45
         '
         'Label17
         '
         Me.Label17.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(8, 230)
+        Me.Label17.Location = New System.Drawing.Point(11, 283)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(21, 22)
+        Me.Label17.Size = New System.Drawing.Size(28, 27)
         Me.Label17.TabIndex = 58
         Me.Label17.Text = "₱ "
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(27, 236)
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(36, 290)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(29, 16)
+        Me.Label18.Size = New System.Drawing.Size(36, 25)
         Me.Label18.TabIndex = 57
         Me.Label18.Text = "99"
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(9, 201)
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(12, 247)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(108, 32)
+        Me.Label19.Size = New System.Drawing.Size(140, 50)
         Me.Label19.TabIndex = 53
         Me.Label19.Text = "RASPBERRY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MILKSHAKE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button5
         '
-        Me.Button5.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Image = Global.Log_In.My.Resources.Resources.Raspberry_milkshake
-        Me.Button5.Location = New System.Drawing.Point(5, 6)
+        Me.Button5.Location = New System.Drawing.Point(7, 7)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(143, 180)
+        Me.Button5.Size = New System.Drawing.Size(191, 222)
         Me.Button5.TabIndex = 29
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -907,47 +979,52 @@ Partial Class Cashier
         Me.caramilkshake.Controls.Add(Me.Label21)
         Me.caramilkshake.Controls.Add(Me.Label22)
         Me.caramilkshake.Controls.Add(Me.Button7)
-        Me.caramilkshake.Location = New System.Drawing.Point(176, 12)
+        Me.caramilkshake.Location = New System.Drawing.Point(235, 15)
+        Me.caramilkshake.Margin = New System.Windows.Forms.Padding(4)
         Me.caramilkshake.Name = "caramilkshake"
-        Me.caramilkshake.Size = New System.Drawing.Size(154, 256)
+        Me.caramilkshake.Size = New System.Drawing.Size(205, 315)
         Me.caramilkshake.TabIndex = 45
         '
         'Label20
         '
         Me.Label20.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(11, 229)
+        Me.Label20.Location = New System.Drawing.Point(15, 282)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(21, 22)
+        Me.Label20.Size = New System.Drawing.Size(28, 27)
         Me.Label20.TabIndex = 54
         Me.Label20.Text = "₱ "
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(30, 235)
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(40, 289)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(29, 16)
+        Me.Label21.Size = New System.Drawing.Size(36, 25)
         Me.Label21.TabIndex = 53
         Me.Label21.Text = "69"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(12, 201)
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(16, 247)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(104, 32)
+        Me.Label22.Size = New System.Drawing.Size(137, 50)
         Me.Label22.TabIndex = 52
         Me.Label22.Text = "CARAMEL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MILKSHAKE"
         '
         'Button7
         '
-        Me.Button7.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Image = Global.Log_In.My.Resources.Resources.Caramel_milkshake
-        Me.Button7.Location = New System.Drawing.Point(5, 6)
+        Me.Button7.Location = New System.Drawing.Point(7, 7)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(143, 180)
+        Me.Button7.Size = New System.Drawing.Size(191, 222)
         Me.Button7.TabIndex = 29
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -957,47 +1034,52 @@ Partial Class Cashier
         Me.vanillamilk.Controls.Add(Me.Label24)
         Me.vanillamilk.Controls.Add(Me.Label25)
         Me.vanillamilk.Controls.Add(Me.Button9)
-        Me.vanillamilk.Location = New System.Drawing.Point(11, 12)
+        Me.vanillamilk.Location = New System.Drawing.Point(15, 15)
+        Me.vanillamilk.Margin = New System.Windows.Forms.Padding(4)
         Me.vanillamilk.Name = "vanillamilk"
-        Me.vanillamilk.Size = New System.Drawing.Size(154, 256)
+        Me.vanillamilk.Size = New System.Drawing.Size(205, 315)
         Me.vanillamilk.TabIndex = 44
         '
         'Label23
         '
         Me.Label23.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(6, 230)
+        Me.Label23.Location = New System.Drawing.Point(8, 283)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(21, 22)
+        Me.Label23.Size = New System.Drawing.Size(28, 27)
         Me.Label23.TabIndex = 56
         Me.Label23.Text = "₱ "
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(5, 201)
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(7, 247)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(127, 16)
+        Me.Label24.Size = New System.Drawing.Size(159, 25)
         Me.Label24.TabIndex = 51
         Me.Label24.Text = "VANILLA MILK"
         '
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(25, 236)
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(33, 290)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(29, 16)
+        Me.Label25.Size = New System.Drawing.Size(36, 25)
         Me.Label25.TabIndex = 55
         Me.Label25.Text = "69"
         '
         'Button9
         '
-        Me.Button9.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Image = Global.Log_In.My.Resources.Resources.Vanilla_milk
-        Me.Button9.Location = New System.Drawing.Point(5, 7)
+        Me.Button9.Location = New System.Drawing.Point(7, 9)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(143, 180)
+        Me.Button9.Size = New System.Drawing.Size(191, 222)
         Me.Button9.TabIndex = 29
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -1007,9 +1089,10 @@ Partial Class Cashier
         Me.pnlChocolate.Controls.Add(Me.whitechoco)
         Me.pnlChocolate.Controls.Add(Me.chocomocha)
         Me.pnlChocolate.Controls.Add(Me.hotchoco)
-        Me.pnlChocolate.Location = New System.Drawing.Point(141, 106)
+        Me.pnlChocolate.Location = New System.Drawing.Point(188, 130)
+        Me.pnlChocolate.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlChocolate.Name = "pnlChocolate"
-        Me.pnlChocolate.Size = New System.Drawing.Size(670, 283)
+        Me.pnlChocolate.Size = New System.Drawing.Size(893, 348)
         Me.pnlChocolate.TabIndex = 6
         '
         'chocofrappe
@@ -1018,47 +1101,52 @@ Partial Class Cashier
         Me.chocofrappe.Controls.Add(Me.Label27)
         Me.chocofrappe.Controls.Add(Me.Label28)
         Me.chocofrappe.Controls.Add(Me.Button10)
-        Me.chocofrappe.Location = New System.Drawing.Point(506, 12)
+        Me.chocofrappe.Location = New System.Drawing.Point(675, 15)
+        Me.chocofrappe.Margin = New System.Windows.Forms.Padding(4)
         Me.chocofrappe.Name = "chocofrappe"
-        Me.chocofrappe.Size = New System.Drawing.Size(154, 256)
+        Me.chocofrappe.Size = New System.Drawing.Size(205, 315)
         Me.chocofrappe.TabIndex = 46
         '
         'Label26
         '
         Me.Label26.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(7, 230)
+        Me.Label26.Location = New System.Drawing.Point(9, 283)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(21, 22)
+        Me.Label26.Size = New System.Drawing.Size(28, 27)
         Me.Label26.TabIndex = 60
         Me.Label26.Text = "₱ "
         '
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(26, 236)
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(35, 290)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(34, 16)
+        Me.Label27.Size = New System.Drawing.Size(48, 25)
         Me.Label27.TabIndex = 59
         Me.Label27.Text = "125"
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(8, 201)
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(11, 247)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(102, 32)
+        Me.Label28.Size = New System.Drawing.Size(148, 50)
         Me.Label28.TabIndex = 54
         Me.Label28.Text = "CHOCOLATE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FRAPPE"
         '
         'Button10
         '
-        Me.Button10.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Image = Global.Log_In.My.Resources.Resources.Chocolate_frappe
-        Me.Button10.Location = New System.Drawing.Point(5, 6)
+        Me.Button10.Location = New System.Drawing.Point(7, 7)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(143, 180)
+        Me.Button10.Size = New System.Drawing.Size(191, 222)
         Me.Button10.TabIndex = 29
         Me.Button10.UseVisualStyleBackColor = True
         '
@@ -1068,47 +1156,52 @@ Partial Class Cashier
         Me.whitechoco.Controls.Add(Me.Label30)
         Me.whitechoco.Controls.Add(Me.Label31)
         Me.whitechoco.Controls.Add(Me.Button11)
-        Me.whitechoco.Location = New System.Drawing.Point(341, 12)
+        Me.whitechoco.Location = New System.Drawing.Point(455, 15)
+        Me.whitechoco.Margin = New System.Windows.Forms.Padding(4)
         Me.whitechoco.Name = "whitechoco"
-        Me.whitechoco.Size = New System.Drawing.Size(154, 256)
+        Me.whitechoco.Size = New System.Drawing.Size(205, 315)
         Me.whitechoco.TabIndex = 45
         '
         'Label29
         '
         Me.Label29.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(8, 230)
+        Me.Label29.Location = New System.Drawing.Point(11, 283)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(21, 22)
+        Me.Label29.Size = New System.Drawing.Size(28, 27)
         Me.Label29.TabIndex = 58
         Me.Label29.Text = "₱ "
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(27, 236)
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(36, 290)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(34, 16)
+        Me.Label30.Size = New System.Drawing.Size(48, 25)
         Me.Label30.TabIndex = 57
         Me.Label30.Text = "105"
         '
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(9, 201)
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(12, 247)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(106, 32)
+        Me.Label31.Size = New System.Drawing.Size(148, 50)
         Me.Label31.TabIndex = 53
         Me.Label31.Text = "WHITE HOT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CHOCOLATE"
         '
         'Button11
         '
-        Me.Button11.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Image = Global.Log_In.My.Resources.Resources.White_hot_chocolate
-        Me.Button11.Location = New System.Drawing.Point(5, 6)
+        Me.Button11.Location = New System.Drawing.Point(7, 7)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(143, 180)
+        Me.Button11.Size = New System.Drawing.Size(191, 222)
         Me.Button11.TabIndex = 29
         Me.Button11.UseVisualStyleBackColor = True
         '
@@ -1118,47 +1211,52 @@ Partial Class Cashier
         Me.chocomocha.Controls.Add(Me.Label33)
         Me.chocomocha.Controls.Add(Me.Label34)
         Me.chocomocha.Controls.Add(Me.Button12)
-        Me.chocomocha.Location = New System.Drawing.Point(176, 12)
+        Me.chocomocha.Location = New System.Drawing.Point(235, 15)
+        Me.chocomocha.Margin = New System.Windows.Forms.Padding(4)
         Me.chocomocha.Name = "chocomocha"
-        Me.chocomocha.Size = New System.Drawing.Size(154, 256)
+        Me.chocomocha.Size = New System.Drawing.Size(205, 315)
         Me.chocomocha.TabIndex = 45
         '
         'Label32
         '
         Me.Label32.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(11, 229)
+        Me.Label32.Location = New System.Drawing.Point(15, 282)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(21, 22)
+        Me.Label32.Size = New System.Drawing.Size(28, 27)
         Me.Label32.TabIndex = 54
         Me.Label32.Text = "₱ "
         '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(30, 235)
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(40, 289)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(34, 16)
+        Me.Label33.Size = New System.Drawing.Size(48, 25)
         Me.Label33.TabIndex = 53
         Me.Label33.Text = "105"
         '
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(12, 201)
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(16, 247)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(102, 32)
+        Me.Label34.Size = New System.Drawing.Size(148, 50)
         Me.Label34.TabIndex = 52
         Me.Label34.Text = "CHOCOLATE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MOCHA"
         '
         'Button12
         '
-        Me.Button12.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Image = Global.Log_In.My.Resources.Resources.Chocolate_mocha
-        Me.Button12.Location = New System.Drawing.Point(5, 6)
+        Me.Button12.Location = New System.Drawing.Point(7, 7)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(143, 180)
+        Me.Button12.Size = New System.Drawing.Size(191, 222)
         Me.Button12.TabIndex = 29
         Me.Button12.UseVisualStyleBackColor = True
         '
@@ -1168,47 +1266,52 @@ Partial Class Cashier
         Me.hotchoco.Controls.Add(Me.Label36)
         Me.hotchoco.Controls.Add(Me.Label37)
         Me.hotchoco.Controls.Add(Me.Button13)
-        Me.hotchoco.Location = New System.Drawing.Point(11, 12)
+        Me.hotchoco.Location = New System.Drawing.Point(15, 15)
+        Me.hotchoco.Margin = New System.Windows.Forms.Padding(4)
         Me.hotchoco.Name = "hotchoco"
-        Me.hotchoco.Size = New System.Drawing.Size(154, 256)
+        Me.hotchoco.Size = New System.Drawing.Size(205, 315)
         Me.hotchoco.TabIndex = 44
         '
         'Label35
         '
         Me.Label35.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(6, 230)
+        Me.Label35.Location = New System.Drawing.Point(8, 283)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(21, 22)
+        Me.Label35.Size = New System.Drawing.Size(28, 27)
         Me.Label35.TabIndex = 56
         Me.Label35.Text = "₱ "
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(5, 201)
+        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(7, 247)
+        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(144, 16)
+        Me.Label36.Size = New System.Drawing.Size(200, 25)
         Me.Label36.TabIndex = 51
         Me.Label36.Text = "HOT CHOCOLATE"
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(25, 236)
+        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(33, 290)
+        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(29, 16)
+        Me.Label37.Size = New System.Drawing.Size(36, 25)
         Me.Label37.TabIndex = 55
         Me.Label37.Text = "79"
         '
         'Button13
         '
-        Me.Button13.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Image = Global.Log_In.My.Resources.Resources.Hot_chocolate
-        Me.Button13.Location = New System.Drawing.Point(5, 7)
+        Me.Button13.Location = New System.Drawing.Point(7, 9)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(143, 180)
+        Me.Button13.Size = New System.Drawing.Size(191, 222)
         Me.Button13.TabIndex = 29
         Me.Button13.UseVisualStyleBackColor = True
         '
@@ -1216,11 +1319,12 @@ Partial Class Cashier
         '
         Me.Label.BackColor = System.Drawing.Color.Brown
         Me.Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label.Font = New System.Drawing.Font("quaver", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label.Location = New System.Drawing.Point(0, 0)
+        Me.Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(670, 32)
+        Me.Label.Size = New System.Drawing.Size(893, 39)
         Me.Label.TabIndex = 2
         Me.Label.Text = "ORDER |"
         Me.Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1228,11 +1332,12 @@ Partial Class Cashier
         'lblOption
         '
         Me.lblOption.BackColor = System.Drawing.Color.Brown
-        Me.lblOption.Font = New System.Drawing.Font("quaver", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOption.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblOption.Location = New System.Drawing.Point(90, 7)
+        Me.lblOption.Location = New System.Drawing.Point(120, 9)
+        Me.lblOption.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblOption.Name = "lblOption"
-        Me.lblOption.Size = New System.Drawing.Size(100, 23)
+        Me.lblOption.Size = New System.Drawing.Size(133, 28)
         Me.lblOption.TabIndex = 3
         '
         'pnlOrder
@@ -1240,10 +1345,11 @@ Partial Class Cashier
         Me.pnlOrder.Controls.Add(Me.DataGridView1)
         Me.pnlOrder.Controls.Add(Me.lblOption)
         Me.pnlOrder.Controls.Add(Me.Label)
-        Me.pnlOrder.Font = New System.Drawing.Font("quaver", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlOrder.Location = New System.Drawing.Point(141, 395)
+        Me.pnlOrder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlOrder.Location = New System.Drawing.Point(188, 486)
+        Me.pnlOrder.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlOrder.Name = "pnlOrder"
-        Me.pnlOrder.Size = New System.Drawing.Size(670, 106)
+        Me.pnlOrder.Size = New System.Drawing.Size(893, 130)
         Me.pnlOrder.TabIndex = 3
         '
         'DataGridView1
@@ -1251,36 +1357,46 @@ Partial Class Cashier
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(667, 150)
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.Size = New System.Drawing.Size(889, 185)
         Me.DataGridView1.TabIndex = 4
         '
         'Column1
         '
         Me.Column1.HeaderText = "Product"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
         '
         'Column2
         '
         Me.Column2.HeaderText = "PRICE"
+        Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
         '
         'Column3
         '
         Me.Column3.HeaderText = "QTY"
+        Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
         '
         'Column4
         '
         Me.Column4.HeaderText = "TOTAL"
+        Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
         '
         'Cashier
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Log_In.My.Resources.Resources._6
-        Me.ClientSize = New System.Drawing.Size(988, 597)
+        Me.ClientSize = New System.Drawing.Size(1317, 735)
         Me.Controls.Add(Me.pnlCoffee)
         Me.Controls.Add(Me.pnlTea)
         Me.Controls.Add(Me.pnlMIlk)
@@ -1290,6 +1406,7 @@ Partial Class Cashier
         Me.Controls.Add(Me.pnlOption)
         Me.Controls.Add(Me.pnlOrder)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Cashier"
         Me.Text = "Cashier"
         Me.pnlOption.ResumeLayout(False)

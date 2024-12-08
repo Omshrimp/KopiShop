@@ -11,6 +11,7 @@ Module Module1
     Public TotalRec As Integer
     Public SaveOnly As Boolean
     Public OldId As String
+    Public LoggedInUserRole As String = ""
 
     Public Sub database_connection()
         dbCON = New OleDb.OleDbConnection

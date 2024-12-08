@@ -38,9 +38,10 @@ Partial Class CashierCheckout
         '
         'Panel2
         '
-        Me.Panel2.Location = New System.Drawing.Point(623, 166)
+        Me.Panel2.Location = New System.Drawing.Point(831, 204)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 314)
+        Me.Panel2.Size = New System.Drawing.Size(267, 386)
         Me.Panel2.TabIndex = 4
         '
         'Panel4
@@ -50,20 +51,22 @@ Partial Class CashierCheckout
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Location = New System.Drawing.Point(0, 100)
+        Me.Panel4.Location = New System.Drawing.Point(0, 123)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(823, 66)
+        Me.Panel4.Size = New System.Drawing.Size(1097, 81)
         Me.Panel4.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("quaver", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(671, 24)
+        Me.Label5.Location = New System.Drawing.Point(895, 30)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 21)
+        Me.Label5.Size = New System.Drawing.Size(107, 31)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "TOTAL"
         '
@@ -71,11 +74,12 @@ Partial Class CashierCheckout
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("quaver", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(522, 24)
+        Me.Label4.Location = New System.Drawing.Point(696, 30)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 21)
+        Me.Label4.Size = New System.Drawing.Size(73, 31)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "QTY"
         '
@@ -83,11 +87,12 @@ Partial Class CashierCheckout
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("quaver", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(345, 24)
+        Me.Label3.Location = New System.Drawing.Point(460, 30)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 21)
+        Me.Label3.Size = New System.Drawing.Size(103, 31)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "PRICE"
         '
@@ -95,11 +100,12 @@ Partial Class CashierCheckout
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("quaver", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(30, 24)
+        Me.Label2.Location = New System.Drawing.Point(40, 30)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 21)
+        Me.Label2.Size = New System.Drawing.Size(157, 31)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "PRODUCT"
         '
@@ -110,15 +116,17 @@ Partial Class CashierCheckout
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(823, 100)
+        Me.Panel1.Size = New System.Drawing.Size(1097, 123)
         Me.Panel1.TabIndex = 1
         '
         'btnCOutBack
         '
-        Me.btnCOutBack.Location = New System.Drawing.Point(28, 33)
+        Me.btnCOutBack.Location = New System.Drawing.Point(37, 41)
+        Me.btnCOutBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCOutBack.Name = "btnCOutBack"
-        Me.btnCOutBack.Size = New System.Drawing.Size(75, 36)
+        Me.btnCOutBack.Size = New System.Drawing.Size(100, 44)
         Me.btnCOutBack.TabIndex = 0
         Me.btnCOutBack.Text = "BACK"
         Me.btnCOutBack.UseVisualStyleBackColor = True
@@ -127,32 +135,35 @@ Partial Class CashierCheckout
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("quaver", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(252, 33)
+        Me.Label1.Location = New System.Drawing.Point(336, 41)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 53)
+        Me.Label1.Size = New System.Drawing.Size(415, 76)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "CHECKOUT"
         '
         'lblCO
         '
         Me.lblCO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCO.Location = New System.Drawing.Point(153, 203)
+        Me.lblCO.Location = New System.Drawing.Point(204, 250)
+        Me.lblCO.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCO.Name = "lblCO"
-        Me.lblCO.Size = New System.Drawing.Size(364, 99)
+        Me.lblCO.Size = New System.Drawing.Size(485, 121)
         Me.lblCO.TabIndex = 5
         '
         'CashierCheckout
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(823, 584)
+        Me.ClientSize = New System.Drawing.Size(1097, 719)
         Me.Controls.Add(Me.lblCO)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "CashierCheckout"
         Me.Text = "CashierCheckout"
         Me.Panel4.ResumeLayout(False)
