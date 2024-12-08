@@ -195,6 +195,9 @@
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stocks.resx">
+      <DependentUpon>Stocks.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeaMenu.resx">
       <DependentUpon>TeaMenu.vb</DependentUpon>
     </EmbeddedResource>

@@ -25,8 +25,10 @@ Partial Class Administrator
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Administrator))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.gpbToggle = New System.Windows.Forms.GroupBox()
-        Me.btnToggle = New System.Windows.Forms.Button()
+        Me.pbLogOut = New System.Windows.Forms.PictureBox()
+        Me.pbTogglePic = New System.Windows.Forms.PictureBox()
         Me.pbStocks = New System.Windows.Forms.PictureBox()
+        Me.pbToggleFull = New System.Windows.Forms.PictureBox()
         Me.pbCashier = New System.Windows.Forms.PictureBox()
         Me.pbUsers = New System.Windows.Forms.PictureBox()
         Me.lblCashier = New System.Windows.Forms.Label()
@@ -37,7 +39,10 @@ Partial Class Administrator
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.gpbToggle.SuspendLayout()
+        CType(Me.pbLogOut, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbTogglePic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbStocks, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbToggleFull, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCashier, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,15 +52,17 @@ Partial Class Administrator
         '
         Me.Panel1.BackColor = System.Drawing.Color.Sienna
         Me.Panel1.Controls.Add(Me.gpbToggle)
-        Me.Panel1.Location = New System.Drawing.Point(0, -1)
+        Me.Panel1.Location = New System.Drawing.Point(6, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(275, 720)
-        Me.Panel1.TabIndex = 0
+        Me.Panel1.TabIndex = 17
         '
         'gpbToggle
         '
-        Me.gpbToggle.Controls.Add(Me.btnToggle)
+        Me.gpbToggle.Controls.Add(Me.pbLogOut)
+        Me.gpbToggle.Controls.Add(Me.pbTogglePic)
         Me.gpbToggle.Controls.Add(Me.pbStocks)
+        Me.gpbToggle.Controls.Add(Me.pbToggleFull)
         Me.gpbToggle.Controls.Add(Me.pbCashier)
         Me.gpbToggle.Controls.Add(Me.pbUsers)
         Me.gpbToggle.Controls.Add(Me.lblCashier)
@@ -71,39 +78,69 @@ Partial Class Administrator
         Me.gpbToggle.TabIndex = 1
         Me.gpbToggle.TabStop = False
         '
-        'btnToggle
+        'pbLogOut
         '
-        Me.btnToggle.Location = New System.Drawing.Point(0, 9)
-        Me.btnToggle.Name = "btnToggle"
-        Me.btnToggle.Size = New System.Drawing.Size(58, 35)
-        Me.btnToggle.TabIndex = 17
-        Me.btnToggle.Text = "Button1"
-        Me.btnToggle.UseVisualStyleBackColor = True
+        Me.pbLogOut.BackColor = System.Drawing.Color.Transparent
+        Me.pbLogOut.Image = CType(resources.GetObject("pbLogOut.Image"), System.Drawing.Image)
+        Me.pbLogOut.InitialImage = CType(resources.GetObject("pbLogOut.InitialImage"), System.Drawing.Image)
+        Me.pbLogOut.Location = New System.Drawing.Point(7, 650)
+        Me.pbLogOut.Margin = New System.Windows.Forms.Padding(0)
+        Me.pbLogOut.Name = "pbLogOut"
+        Me.pbLogOut.Size = New System.Drawing.Size(43, 39)
+        Me.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbLogOut.TabIndex = 23
+        Me.pbLogOut.TabStop = False
+        '
+        'pbTogglePic
+        '
+        Me.pbTogglePic.BackColor = System.Drawing.Color.Transparent
+        Me.pbTogglePic.Image = CType(resources.GetObject("pbTogglePic.Image"), System.Drawing.Image)
+        Me.pbTogglePic.InitialImage = CType(resources.GetObject("pbTogglePic.InitialImage"), System.Drawing.Image)
+        Me.pbTogglePic.Location = New System.Drawing.Point(206, 18)
+        Me.pbTogglePic.Margin = New System.Windows.Forms.Padding(0)
+        Me.pbTogglePic.Name = "pbTogglePic"
+        Me.pbTogglePic.Size = New System.Drawing.Size(40, 37)
+        Me.pbTogglePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbTogglePic.TabIndex = 22
+        Me.pbTogglePic.TabStop = False
         '
         'pbStocks
         '
         Me.pbStocks.BackColor = System.Drawing.Color.Transparent
         Me.pbStocks.Image = CType(resources.GetObject("pbStocks.Image"), System.Drawing.Image)
         Me.pbStocks.InitialImage = CType(resources.GetObject("pbStocks.InitialImage"), System.Drawing.Image)
-        Me.pbStocks.Location = New System.Drawing.Point(15, 221)
+        Me.pbStocks.Location = New System.Drawing.Point(5, 271)
         Me.pbStocks.Margin = New System.Windows.Forms.Padding(0)
         Me.pbStocks.Name = "pbStocks"
-        Me.pbStocks.Size = New System.Drawing.Size(40, 36)
+        Me.pbStocks.Size = New System.Drawing.Size(55, 45)
         Me.pbStocks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbStocks.TabIndex = 7
+        Me.pbStocks.TabIndex = 20
         Me.pbStocks.TabStop = False
+        '
+        'pbToggleFull
+        '
+        Me.pbToggleFull.BackColor = System.Drawing.Color.Transparent
+        Me.pbToggleFull.Image = CType(resources.GetObject("pbToggleFull.Image"), System.Drawing.Image)
+        Me.pbToggleFull.InitialImage = CType(resources.GetObject("pbToggleFull.InitialImage"), System.Drawing.Image)
+        Me.pbToggleFull.Location = New System.Drawing.Point(4, 18)
+        Me.pbToggleFull.Margin = New System.Windows.Forms.Padding(0)
+        Me.pbToggleFull.Name = "pbToggleFull"
+        Me.pbToggleFull.Size = New System.Drawing.Size(42, 37)
+        Me.pbToggleFull.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbToggleFull.TabIndex = 21
+        Me.pbToggleFull.TabStop = False
         '
         'pbCashier
         '
         Me.pbCashier.BackColor = System.Drawing.Color.Transparent
         Me.pbCashier.Image = CType(resources.GetObject("pbCashier.Image"), System.Drawing.Image)
         Me.pbCashier.InitialImage = CType(resources.GetObject("pbCashier.InitialImage"), System.Drawing.Image)
-        Me.pbCashier.Location = New System.Drawing.Point(15, 264)
+        Me.pbCashier.Location = New System.Drawing.Point(5, 339)
         Me.pbCashier.Margin = New System.Windows.Forms.Padding(0)
         Me.pbCashier.Name = "pbCashier"
-        Me.pbCashier.Size = New System.Drawing.Size(40, 33)
+        Me.pbCashier.Size = New System.Drawing.Size(55, 43)
         Me.pbCashier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbCashier.TabIndex = 6
+        Me.pbCashier.TabIndex = 19
         Me.pbCashier.TabStop = False
         '
         'pbUsers
@@ -111,12 +148,12 @@ Partial Class Administrator
         Me.pbUsers.BackColor = System.Drawing.Color.Transparent
         Me.pbUsers.Image = CType(resources.GetObject("pbUsers.Image"), System.Drawing.Image)
         Me.pbUsers.InitialImage = CType(resources.GetObject("pbUsers.InitialImage"), System.Drawing.Image)
-        Me.pbUsers.Location = New System.Drawing.Point(15, 178)
+        Me.pbUsers.Location = New System.Drawing.Point(5, 195)
         Me.pbUsers.Margin = New System.Windows.Forms.Padding(0)
         Me.pbUsers.Name = "pbUsers"
-        Me.pbUsers.Size = New System.Drawing.Size(51, 43)
+        Me.pbUsers.Size = New System.Drawing.Size(72, 56)
         Me.pbUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbUsers.TabIndex = 1
+        Me.pbUsers.TabIndex = 18
         Me.pbUsers.TabStop = False
         '
         'lblCashier
@@ -125,7 +162,7 @@ Partial Class Administrator
         Me.lblCashier.BackColor = System.Drawing.Color.Sienna
         Me.lblCashier.Font = New System.Drawing.Font("Garamond", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCashier.ForeColor = System.Drawing.Color.Wheat
-        Me.lblCashier.Location = New System.Drawing.Point(66, 269)
+        Me.lblCashier.Location = New System.Drawing.Point(92, 348)
         Me.lblCashier.Name = "lblCashier"
         Me.lblCashier.Size = New System.Drawing.Size(87, 26)
         Me.lblCashier.TabIndex = 4
@@ -137,7 +174,7 @@ Partial Class Administrator
         Me.lblStocks.BackColor = System.Drawing.Color.Sienna
         Me.lblStocks.Font = New System.Drawing.Font("Garamond", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStocks.ForeColor = System.Drawing.Color.Wheat
-        Me.lblStocks.Location = New System.Drawing.Point(71, 228)
+        Me.lblStocks.Location = New System.Drawing.Point(92, 280)
         Me.lblStocks.Name = "lblStocks"
         Me.lblStocks.Size = New System.Drawing.Size(76, 26)
         Me.lblStocks.TabIndex = 3
@@ -149,7 +186,7 @@ Partial Class Administrator
         Me.lblUsers.BackColor = System.Drawing.Color.Sienna
         Me.lblUsers.Font = New System.Drawing.Font("Garamond", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUsers.ForeColor = System.Drawing.Color.Wheat
-        Me.lblUsers.Location = New System.Drawing.Point(75, 186)
+        Me.lblUsers.Location = New System.Drawing.Point(92, 211)
         Me.lblUsers.Name = "lblUsers"
         Me.lblUsers.Size = New System.Drawing.Size(68, 26)
         Me.lblUsers.TabIndex = 1
@@ -181,11 +218,11 @@ Partial Class Administrator
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(1082, 9)
+        Me.PictureBox5.Location = New System.Drawing.Point(1088, 10)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(37, 33)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 16
+        Me.PictureBox5.TabIndex = 18
         Me.PictureBox5.TabStop = False
         '
         'Administrator
@@ -195,8 +232,8 @@ Partial Class Administrator
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1131, 720)
-        Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PictureBox5)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -205,7 +242,10 @@ Partial Class Administrator
         Me.Panel1.ResumeLayout(False)
         Me.gpbToggle.ResumeLayout(False)
         Me.gpbToggle.PerformLayout()
+        CType(Me.pbLogOut, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbTogglePic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbStocks, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbToggleFull, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCashier, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbUsers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -215,14 +255,16 @@ Partial Class Administrator
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents gpbToggle As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents pbLogOut As PictureBox
+    Friend WithEvents pbTogglePic As PictureBox
+    Friend WithEvents pbStocks As PictureBox
+    Friend WithEvents pbToggleFull As PictureBox
+    Friend WithEvents pbCashier As PictureBox
+    Friend WithEvents pbUsers As PictureBox
     Friend WithEvents lblCashier As Label
     Friend WithEvents lblStocks As Label
     Friend WithEvents lblUsers As Label
-    Friend WithEvents pbUsers As PictureBox
-    Friend WithEvents pbStocks As PictureBox
-    Friend WithEvents pbCashier As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents btnToggle As Button
 End Class
