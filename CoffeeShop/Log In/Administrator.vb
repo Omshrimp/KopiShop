@@ -22,7 +22,7 @@ Public Class Administrator
         End If
     End Sub
     Sub lblUsers_Click(sender As Object, e As EventArgs) Handles lblUsers.Click
-        If LoggedInUserRole <> "Admin" Then
+        If LoggedInUserRole <> "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
@@ -30,7 +30,7 @@ Public Class Administrator
         Me.Close()
     End Sub
     Private Sub pbUsers_Click(sender As Object, e As EventArgs) Handles pbUsers.Click
-        If LoggedInUserRole <> "Admin" Then
+        If LoggedInUserRole <> "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
@@ -39,7 +39,7 @@ Public Class Administrator
     End Sub
 
     Private Sub lblStocks_Click(sender As Object, e As EventArgs) Handles lblStocks.Click
-        If LoggedInUserRole <> "Admin" Then
+        If LoggedInUserRole <> "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
@@ -47,7 +47,7 @@ Public Class Administrator
         Me.Close()
     End Sub
     Private Sub pbStocks_Click(sender As Object, e As EventArgs) Handles pbStocks.Click
-        If LoggedInUserRole <> "Admin" Then
+        If LoggedInUserRole <> "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If

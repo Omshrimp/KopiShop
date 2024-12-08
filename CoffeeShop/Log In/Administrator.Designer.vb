@@ -25,21 +25,18 @@ Partial Class Administrator
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Administrator))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.gpbToggle = New System.Windows.Forms.GroupBox()
-        Me.pbReports = New System.Windows.Forms.PictureBox()
+        Me.btnToggle = New System.Windows.Forms.Button()
         Me.pbStocks = New System.Windows.Forms.PictureBox()
         Me.pbCashier = New System.Windows.Forms.PictureBox()
         Me.pbUsers = New System.Windows.Forms.PictureBox()
-        Me.lblReports = New System.Windows.Forms.Label()
         Me.lblCashier = New System.Windows.Forms.Label()
         Me.lblStocks = New System.Windows.Forms.Label()
         Me.lblUsers = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.btnToggle = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.gpbToggle.SuspendLayout()
-        CType(Me.pbReports, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbStocks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCashier, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbUsers, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,11 +55,9 @@ Partial Class Administrator
         'gpbToggle
         '
         Me.gpbToggle.Controls.Add(Me.btnToggle)
-        Me.gpbToggle.Controls.Add(Me.pbReports)
         Me.gpbToggle.Controls.Add(Me.pbStocks)
         Me.gpbToggle.Controls.Add(Me.pbCashier)
         Me.gpbToggle.Controls.Add(Me.pbUsers)
-        Me.gpbToggle.Controls.Add(Me.lblReports)
         Me.gpbToggle.Controls.Add(Me.lblCashier)
         Me.gpbToggle.Controls.Add(Me.lblStocks)
         Me.gpbToggle.Controls.Add(Me.lblUsers)
@@ -76,18 +71,14 @@ Partial Class Administrator
         Me.gpbToggle.TabIndex = 1
         Me.gpbToggle.TabStop = False
         '
-        'pbReports
+        'btnToggle
         '
-        Me.pbReports.BackColor = System.Drawing.Color.Transparent
-        Me.pbReports.Image = CType(resources.GetObject("pbReports.Image"), System.Drawing.Image)
-        Me.pbReports.InitialImage = CType(resources.GetObject("pbReports.InitialImage"), System.Drawing.Image)
-        Me.pbReports.Location = New System.Drawing.Point(15, 307)
-        Me.pbReports.Margin = New System.Windows.Forms.Padding(0)
-        Me.pbReports.Name = "pbReports"
-        Me.pbReports.Size = New System.Drawing.Size(40, 30)
-        Me.pbReports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbReports.TabIndex = 8
-        Me.pbReports.TabStop = False
+        Me.btnToggle.Location = New System.Drawing.Point(0, 9)
+        Me.btnToggle.Name = "btnToggle"
+        Me.btnToggle.Size = New System.Drawing.Size(58, 35)
+        Me.btnToggle.TabIndex = 17
+        Me.btnToggle.Text = "Button1"
+        Me.btnToggle.UseVisualStyleBackColor = True
         '
         'pbStocks
         '
@@ -127,18 +118,6 @@ Partial Class Administrator
         Me.pbUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbUsers.TabIndex = 1
         Me.pbUsers.TabStop = False
-        '
-        'lblReports
-        '
-        Me.lblReports.AutoSize = True
-        Me.lblReports.BackColor = System.Drawing.Color.Sienna
-        Me.lblReports.Font = New System.Drawing.Font("Garamond", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReports.ForeColor = System.Drawing.Color.Wheat
-        Me.lblReports.Location = New System.Drawing.Point(66, 311)
-        Me.lblReports.Name = "lblReports"
-        Me.lblReports.Size = New System.Drawing.Size(89, 26)
-        Me.lblReports.TabIndex = 5
-        Me.lblReports.Text = "Reports"
         '
         'lblCashier
         '
@@ -209,15 +188,6 @@ Partial Class Administrator
         Me.PictureBox5.TabIndex = 16
         Me.PictureBox5.TabStop = False
         '
-        'btnToggle
-        '
-        Me.btnToggle.Location = New System.Drawing.Point(0, 9)
-        Me.btnToggle.Name = "btnToggle"
-        Me.btnToggle.Size = New System.Drawing.Size(58, 35)
-        Me.btnToggle.TabIndex = 17
-        Me.btnToggle.Text = "Button1"
-        Me.btnToggle.UseVisualStyleBackColor = True
-        '
         'Administrator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -235,7 +205,6 @@ Partial Class Administrator
         Me.Panel1.ResumeLayout(False)
         Me.gpbToggle.ResumeLayout(False)
         Me.gpbToggle.PerformLayout()
-        CType(Me.pbReports, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbStocks, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCashier, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbUsers, System.ComponentModel.ISupportInitialize).EndInit()
@@ -248,12 +217,10 @@ Partial Class Administrator
     Friend WithEvents gpbToggle As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents lblReports As Label
     Friend WithEvents lblCashier As Label
     Friend WithEvents lblStocks As Label
     Friend WithEvents lblUsers As Label
     Friend WithEvents pbUsers As PictureBox
-    Friend WithEvents pbReports As PictureBox
     Friend WithEvents pbStocks As PictureBox
     Friend WithEvents pbCashier As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
