@@ -18,7 +18,7 @@
     Private Sub btnCancelOrder_Click(sender As Object, e As EventArgs) Handles btnCancelOrder.Click
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to cancel the order?", "Cancel Order", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
-
+            DataGridView1.Rows.Clear()
 
         End If
     End Sub
@@ -59,56 +59,7 @@
         pnlMIlk.Visible = False
         pnlChocolate.Visible = True
     End Sub
-
-    Private Sub btnSubEspresso_Click(sender As Object, e As EventArgs) Handles btnSubEspresso.Click
-        txtEspressoQty.Text -= 1
-        If txtEspressoQty.Text <= 0 Then
-            txtEspressoQty.Text = 0
-        End If
-    End Sub
-
-    Private Sub btnSubAmericano_Click(sender As Object, e As EventArgs) Handles btnSubAmericano.Click
-        txtAmericanoQty.Text -= 1
-        If txtAmericanoQty.Text <= 0 Then
-            txtAmericanoQty.Text = 0
-        End If
-    End Sub
-
-    Private Sub btnSubCappuccino_Click(sender As Object, e As EventArgs) Handles btnSubCappuccino.Click
-        txtCappuccinoQty.Text -= 1
-        If txtCappuccinoQty.Text <= 0 Then
-            txtCappuccinoQty.Text = 0
-        End If
-    End Sub
-
-    Private Sub btnSubIcedCoffee_Click(sender As Object, e As EventArgs) Handles btnSubIcedCoffee.Click
-        txtIcedCoffeeQty.Text -= 1
-        If txtIcedCoffeeQty.Text <= 0 Then
-            txtIcedCoffeeQty.Text = 0
-        End If
-    End Sub
-
-    Private Sub btnAddEspresso_Click(sender As Object, e As EventArgs) Handles btnAddEspresso.Click
-        txtEspressoQty.Text += 1
-    End Sub
-
-    Private Sub btnAddAmericano_Click(sender As Object, e As EventArgs) Handles btnAddAmericano.Click
-        txtAmericanoQty.Text += 1
-    End Sub
-
-    Private Sub btnAddCappuccino_Click(sender As Object, e As EventArgs) Handles btnAddCappuccino.Click
-        txtCappuccinoQty.Text += 1
-    End Sub
-
-    Private Sub btnAddIcedCoffee_Click(sender As Object, e As EventArgs) Handles btnAddIcedCoffee.Click
-        txtIcedCoffeeQty.Text += 1
-    End Sub
-
-    Private Sub btnEspre_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         Me.Close()
         Administrator.Show()
     End Sub
