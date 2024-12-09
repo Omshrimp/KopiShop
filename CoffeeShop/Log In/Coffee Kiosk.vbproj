@@ -85,12 +85,6 @@
     <Compile Include="Cashier.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CashierCheckout.Designer.vb">
-      <DependentUpon>CashierCheckout.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CashierCheckout.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LogIn.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -140,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CashierCheckout.resx">
-      <DependentUpon>CashierCheckout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.vb</DependentUpon>

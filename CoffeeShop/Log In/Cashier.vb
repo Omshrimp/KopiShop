@@ -243,7 +243,9 @@ Public Class Cashier
 
     End Sub
 
-    Private Sub pnlTop_Paint(sender As Object, e As PaintEventArgs) Handles pnlTop.Paint
-
+    Private Sub pbCashierHome_Click(sender As Object, e As EventArgs) Handles pbCashierHome.Click
+        Me.Close()
+        Administrator.Show()
     End Sub
+
 End Class

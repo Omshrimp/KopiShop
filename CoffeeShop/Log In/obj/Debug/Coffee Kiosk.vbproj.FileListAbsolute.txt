@@ -47,7 +47,6 @@ C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\bin\Debug\
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Coffee Kiosk.vbproj.AssemblyReference.cache
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Administrator.resources
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Cashier.resources
-C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.CashierCheckout.resources
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.LogIn.resources
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Resources.resources
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.SignUp.resources
@@ -95,5 +94,5 @@ C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Coffee Kiosk.vbproj.C
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log In.exe
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log In.xml
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log In.pdb
-C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Stocks.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.frmCoffeeManageEntry.resources
+C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.frmCoffeeManageEntry.resources
