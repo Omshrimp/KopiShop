@@ -8,17 +8,17 @@ Public Class Administrator
         If LoggedInUserRole = "ADMIN" Then
             pbUsers.Enabled = True
             pbCashier.Enabled = True
-            pbStocks.Enabled = True
+            pbProducts.Enabled = True
             lblUsers.Enabled = True
             lblCashier.Enabled = True
-            lblStocks.Enabled = True
+            lblProducts.Enabled = True
         ElseIf LoggedInUserRole = "CASHIER" Then
             pbUsers.Enabled = False
             pbCashier.Enabled = True
-            pbStocks.Enabled = False
+            pbProducts.Enabled = False
             lblUsers.Enabled = False
             lblCashier.Enabled = True
-            lblStocks.Enabled = False
+            lblProducts.Enabled = False
         End If
     End Sub
     Sub panel()
@@ -58,15 +58,6 @@ Public Class Administrator
         End If
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
-        Dim result As DialogResult = MessageBox.Show("Are you sure you want to terminate the application?",
-        "Terminate Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-
-        If result = DialogResult.Yes Then
-            Application.Exit()
-        End If
-    End Sub
-
     Private Sub lblUsers_Click_1(sender As Object, e As EventArgs) Handles lblUsers.Click
         If LoggedInUserRole = "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -85,16 +76,16 @@ Public Class Administrator
         End If
     End Sub
 
-    Private Sub lblStocks_Click(sender As Object, e As EventArgs) Handles lblStocks.Click
+    Private Sub lblProducts_Click(sender As Object, e As EventArgs) Handles lblProducts.Click
         If LoggedInUserRole = "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             Me.Close()
-            Stocks.Show()
+            frmCoffeeManageEntry.Show()
         End If
     End Sub
 
-    Private Sub pbStocks_Click(sender As Object, e As EventArgs) Handles pbStocks.Click
+    Private Sub pbProducts_Click(sender As Object, e As EventArgs) Handles pbProducts.Click
         If LoggedInUserRole = "ADMIN" Then
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
@@ -113,7 +104,12 @@ Public Class Administrator
         Me.Close()
     End Sub
 
-    Private Sub PictureBox5_Click_1(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub pbTerminate_Click_1(sender As Object, e As EventArgs) Handles pbTerminate.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to terminate the application?",
+      "Terminate Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
+        If result = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
 End Class

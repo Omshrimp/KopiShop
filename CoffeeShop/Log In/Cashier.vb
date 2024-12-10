@@ -43,7 +43,7 @@ Public Class Cashier
     Sub display_records()
         ' dbDS.Tables("coffeeMaster").AcceptChanges()
         DataGridView1.DataSource = Nothing
-        DataGridView1.DataSource = dbDS.Tables("coffeeMaster")
+        DataGridView1.DataSource = dbDS.Tables("tblProducts")
         DataGridView1.Enabled = True
     End Sub
 
@@ -51,17 +51,14 @@ Public Class Cashier
             Try
                 Dim sdate As String = Now.ToString("yyyy")
 
-            Dim cmd As New OleDb.OleDbCommand("select * from OrderMaster where orderno like '" & sdate & "%' order by id desc", dbCON)
+            Dim cmd As New OleDb.OleDbCommand("select * from tblProducts where orderno like '" & sdate & "%' order by id desc", dbCON)
             dr = cmd.ExecuteReader
                 dr.Read()
-                If dr.HasRows Then
-                    getorderno = CLng(dr.Item("orderno").ToString) + 1
-                Else
-                    getorderno = sdate & "0001"
-                End If
-
-
-
+            If dr.HasRows Then
+                getorderno = CLng(dr.Item("orderno").ToString) + 1
+            Else
+                getorderno = sdate & "0001"
+            End If
         Catch ex As Exception
             MsgBox(ex.Message, vbCritical)
         End Try
@@ -77,64 +74,91 @@ Public Class Cashier
 
 
     Sub imageload()
+        ' Open database connection
         Call Connection_State()
 
-        Dim cmd As New OleDb.OleDbCommand("SELECT `img`,`coffeecode`,`coffeename`,`size`,`price`,`status` FROM coffeeMaster", dbCON)
+        ' SQL query to fetch required data
+        Dim cmd As New OleDb.OleDbCommand("SELECT [coffeecode],[coffeename],[price],[img] FROM tblProducts", dbCON)
         dr = cmd.ExecuteReader
+
+        ' Configure FlowLayoutPanel
         FlowLayoutPanel1.AutoScroll = True
         FlowLayoutPanel1.Controls.Clear()
 
-        While dr.Read
-            Dim len As Long = dr.GetBytes(0, 0, Nothing, 0, 0)
-            Dim array(CInt(len)) As Byte
-            dr.GetBytes(0, 0, array, 0, CInt(len))
+        ' Loop through the results
+        While dr.Read()
+            ' Read image bytes (assuming the image is in the 4th column: [img])
+            Dim imgBytes As Byte() = If(Not IsDBNull(dr("img")), CType(dr("img"), Byte()), Nothing)
 
-            pic = New PictureBox
+            ' Convert byte array to an Image
+            Dim img As Image = Nothing
+            If imgBytes IsNot Nothing Then
+                Using ms As New IO.MemoryStream(imgBytes)
+                    img = Image.FromStream(ms)
+                End Using
+            End If
+
+            ' Create a PictureBox to display the image
+            Dim pic As New PictureBox()
             pic.Width = 120
             pic.Height = 150
             pic.BackgroundImageLayout = ImageLayout.Stretch
             pic.Tag = dr.Item("coffeecode").ToString
 
-            lbldesc = New Label
+            If img IsNot Nothing Then
+                pic.BackgroundImage = img
+            Else
+                ' Optional: Add a placeholder image if no image is found
+                pic.BackgroundImage = My.Resources._6
+            End If
+
+            ' Create a Label for the product description
+            Dim lbldesc As New Label()
+            lbldesc.Text = dr("coffeename").ToString
             lbldesc.ForeColor = Color.White
             lbldesc.BackColor = Color.DodgerBlue
             lbldesc.TextAlign = ContentAlignment.MiddleCenter
             lbldesc.Dock = DockStyle.Top
             lbldesc.Font = New Font("Segoe UI", 8, FontStyle.Bold)
-            lbldesc.Tag = dr.Item("coffeecode").ToString
+            lbldesc.Tag = dr("coffeecode").ToString
 
-            lblprice = New Label
+            ' Create a Label for the product price
+            Dim lblprice As New Label()
+            lblprice.Text = $"Price: {dr("price")}"
             lblprice.ForeColor = Color.White
             lblprice.BackColor = Color.DarkOrange
-            lblprice.Dock = DockStyle.Bottom
             lblprice.TextAlign = ContentAlignment.MiddleCenter
+            lblprice.Dock = DockStyle.Bottom
             lblprice.AutoSize = False
             lblprice.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-            lblprice.Tag = dr.Item("coffeecode").ToString
+            lblprice.Tag = dr("coffeecode").ToString
 
-            Dim ms As New System.IO.MemoryStream(array)
-            Dim bitmap As New System.Drawing.Bitmap(ms)
-            pic.BackgroundImage = bitmap
-            lbldesc.Text = dr.Item("coffeename").ToString
-            lblprice.Text = dr.Item("price").ToString
-
+            ' Add labels to the PictureBox control
             pic.Controls.Add(lbldesc)
             pic.Controls.Add(lblprice)
+
+            ' Add PictureBox to FlowLayoutPanel
             FlowLayoutPanel1.Controls.Add(pic)
 
+            ' Attach click event handlers for interaction
             AddHandler pic.Click, AddressOf Selectimg_Click
             AddHandler lbldesc.Click, AddressOf Selectimg_Click
             AddHandler lblprice.Click, AddressOf Selectimg_Click
-
         End While
+
+        ' Dispose of the DataReader
         dr.Dispose()
+
+        ' Close the database connection
+        dbCON.Close()
     End Sub
+
 
     Public Sub Selectimg_Click(sender As Object, e As EventArgs)
         Call Connection_State()
 
 
-        Dim cmd As New OleDb.OleDbCommand("select * from coffeeMaster where coffeecode like '" & sender.tag.ToString & "%' ", dbCON)
+        Dim cmd As New OleDb.OleDbCommand("select * from tblProducts where coffeecode like '" & sender.tag.ToString & "%' ", dbCON)
         dr = cmd.ExecuteReader
         While dr.Read = True
             ' Before adding rows, ensure columns are defined in DataGridView

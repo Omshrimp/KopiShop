@@ -9,41 +9,46 @@ Public Class LogIn
     End Sub
 
     Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
-        If txtUserName.Text = Nothing And txtPass.Text = Nothing And cboRole.Text = Nothing Then
+        If txtUserName.Text = "" And txtPass.Text = "" And cboRole.Text = "" Then
             MsgBox("All Fields are Required!", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Invalid Log In")
-        ElseIf txtUserName.Text = Nothing Then
+        ElseIf txtUserName.Text = "" Then
             MsgBox("Please Enter Username", MsgBoxStyle.OkOnly + MsgBoxStyle.Exclamation, "Invalid Log In")
-        ElseIf txtPass.Text = Nothing Then
+        ElseIf txtPass.Text = "" Then
             MsgBox("Please Enter Password", MsgBoxStyle.OkOnly + MsgBoxStyle.Exclamation, "Invalid Log In")
-        ElseIf cboRole.Text = Nothing Then
+        ElseIf cboRole.Text = "" Then
             MsgBox("Please Select Role", MsgBoxStyle.OkOnly + MsgBoxStyle.Exclamation, "Invalid Log In")
         Else
+            ' Corrected SQL command with positional parameters
             dbCMD = New OleDbCommand("select * from tblAccounts where Username=? and Password=? and Role=?", dbCON)
-            dbCMD.Parameters.AddWithValue("@2", OleDbType.VarChar).Value = txtUserName.Text
-            dbCMD.Parameters.AddWithValue("@3", OleDbType.VarChar).Value = txtPass.Text
-            dbCMD.Parameters.AddWithValue("@5", OleDbType.VarChar).Value = cboRole.Text
 
-            Dim result As Integer = Convert.ToInt32(dbCMD.ExecuteScalar())
-            If result = 0 Then
-                MsgBox("Invalid Username or Password.")
-                Me.Show()
-            ElseIf cboRole.Text = "ADMIN" Then
-                Administrator.Show()
-                Me.Hide()
-            ElseIf cboRole.Text = "CASHIER" Then
-                Cashier.Show()
-                Me.Hide()
+            ' Add parameters in the correct order (Username, Password, Role)
+            dbCMD.Parameters.AddWithValue("?", txtUserName.Text)
+            dbCMD.Parameters.AddWithValue("?", txtPass.Text)
+            dbCMD.Parameters.AddWithValue("?", cboRole.Text)
+
+            Dim result As Object = dbCMD.ExecuteScalar()
+
+            ' Check if a result is returned
+            If result IsNot Nothing AndAlso Convert.ToInt32(result) > 0 Then
+                If cboRole.Text = "ADMIN" Then
+                    Administrator.Show()
+                    Me.Hide()
+                ElseIf cboRole.Text = "CASHIER" Then
+                    Cashier.Show()
+                    Me.Hide()
+                End If
             Else
-                MsgBox("Please Select Role", MsgBoxStyle.OkOnly + MsgBoxStyle.Exclamation, "Invalid Log In")
+                MsgBox("Invalid Username or Password.", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Invalid Log In")
             End If
 
-            txtUserName.Clear()
-            txtPass.Clear()
-            cboRole.Text = Nothing
+            ' Clear the input fields after login attempt
+
         End If
 
+        ' Close connection after operation
         dbCON.Close()
     End Sub
+
 
     Private Sub lblSignUp_Click(sender As Object, e As EventArgs) Handles lblSignUp.Click
         SignUp.Show()

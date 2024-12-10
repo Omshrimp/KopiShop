@@ -218,7 +218,7 @@ Public Class Users
 
     Private Sub pbStocks_Click_1(sender As Object, e As EventArgs) Handles pbStocks.Click
         Me.Close()
-        Stocks.Show()
+        frmCoffeeManageEntry.Show()
     End Sub
 
     Private Sub pbCashier_Click_1(sender As Object, e As EventArgs) Handles pbCashier.Click
