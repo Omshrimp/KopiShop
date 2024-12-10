@@ -86,13 +86,9 @@ C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Coffee Kiosk.vbproj.A
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Administrator.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Cashier.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.CashierCheckout.resources
-C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.ChocoMenu.resources
-C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.CoffeeMenu.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.LogIn.resources
-C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.MilkMenu.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Resources.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.SignUp.resources
-C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.TeaMenu.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Users.resources
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Coffee Kiosk.vbproj.GenerateResource.cache
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Coffee Kiosk.vbproj.CoreCompileInputs.cache
@@ -101,3 +97,5 @@ C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log In.xml
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log In.pdb
 C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Stocks.resources
 C:\Users\yumi\Documents\Comprog\CoffeeShop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.Stocks.resources
+C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.frmCoffeeManageEntry.resources
+C:\Users\5VAD\Desktop\KopiShop\CoffeeShop\Log In\obj\Debug\Log_In.frmManageCoffee.resources
