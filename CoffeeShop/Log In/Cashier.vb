@@ -4,29 +4,47 @@ Public Class Cashier
 
     Dim dr As OleDbDataReader
     Dim i As Integer
-        Dim _filter As String = ""
-        Dim dbADAP As New OleDb.OleDbDataAdapter
-        Dim dbDS As DataSet
-        Dim overtotal As Decimal
+    Dim _filter As String = ""
+    Dim dbADAP As New OleDb.OleDbDataAdapter
+    Dim dbDS As DataSet
+    Dim overtotal As Decimal
 
     Private Sub Cashier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call database_connection()
+        Call get_records()
 
         lbl_OrderDate.Text = Date.Now.ToString("dd/MM/yyyy")
         lbl_orderno.Text = getorderno()
         imageload()
 
         ' Define DataGridView columns here
-        DataGridView1.Columns.Clear() ' Clear existing columns (if any)
-        DataGridView1.Columns.Add("OrderNo", "Order No")
-        DataGridView1.Columns.Add("CoffeeCode", "Coffee Code")
-        DataGridView1.Columns.Add("CoffeeName", "Coffee Name")
-        DataGridView1.Columns.Add("Price", "Price")
-        DataGridView1.Columns.Add("Quantity", "Quantity")
+        'DataGridView1.Columns.Clear() ' Clear existing columns (if any)
+        'DataGridView1.Columns.Add("OrderNo", "Order No")
+        'DataGridView1.Columns.Add("CoffeeCode", "Coffee Code")
+        'DataGridView1.Columns.Add("CoffeeName", "Coffee Name")
+        'DataGridView1.Columns.Add("Price", "Price")
+        'DataGridView1.Columns.Add("Quantity", "Quantity")
 
         dbADAP = New OleDb.OleDbDataAdapter("select * from OrderMaster", dbCON)
         dbDS = New DataSet
         dbADAP.Fill(dbDS, "OrderMaster")
+    End Sub
+    Sub get_records()
+        Call database_connection()
+
+        dbADAP = New OleDb.OleDbDataAdapter("select * from OrderMaster", dbCON)
+        dbDS = New DataSet
+        dbADAP.Fill(dbDS, "OrderMaster")
+
+        RecPointer = 0
+        TotalRec = dbDS.Tables("OrderMaster").Rows.Count
+
+        ' Call display_records()
+    End Sub
+    Sub display_records()
+        ' dbDS.Tables("coffeeMaster").AcceptChanges()
+        DataGridView1.DataSource = Nothing
+        DataGridView1.DataSource = dbDS.Tables("coffeeMaster")
+        DataGridView1.Enabled = True
     End Sub
 
     Function getorderno() As String
@@ -59,6 +77,8 @@ Public Class Cashier
 
 
     Sub imageload()
+        Call Connection_State()
+
         Dim cmd As New OleDb.OleDbCommand("SELECT `img`,`coffeecode`,`coffeename`,`size`,`price`,`status` FROM coffeeMaster", dbCON)
         dr = cmd.ExecuteReader
         FlowLayoutPanel1.AutoScroll = True
@@ -111,6 +131,9 @@ Public Class Cashier
     End Sub
 
     Public Sub Selectimg_Click(sender As Object, e As EventArgs)
+        Call Connection_State()
+
+
         Dim cmd As New OleDb.OleDbCommand("select * from coffeeMaster where coffeecode like '" & sender.tag.ToString & "%' ", dbCON)
         dr = cmd.ExecuteReader
         While dr.Read = True
@@ -127,7 +150,7 @@ Public Class Cashier
             ' Add rows now that columns are defined
             DataGridView1.Rows.Add(New String() {DataGridView1.Rows.Count + 1, dr.Item("coffeecode").ToString, dr.Item("coffeename").ToString, dr.Item("price"), 1})
         End While
-
+        dbCON.Close()
     End Sub
 
     Sub overalltotal()
@@ -196,10 +219,7 @@ Public Class Cashier
 
     End Sub
 
+    Private Sub pnlTop_Paint(sender As Object, e As PaintEventArgs) Handles pnlTop.Paint
 
-    Private Sub btn_ManageCoffee_Click(sender As Object, e As EventArgs) Handles btn_ManageCoffee.Click
-        frmManageCoffee.ShowDialog()
     End Sub
-
-
 End Class

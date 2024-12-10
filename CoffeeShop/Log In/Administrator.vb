@@ -99,7 +99,7 @@ Public Class Administrator
             MessageBox.Show("Access Denied: This feature is available only to admins.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             Me.Close()
-            Stocks.Show()
+            frmCoffeeManageEntry.Show()
         End If
     End Sub
 

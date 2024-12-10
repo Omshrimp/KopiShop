@@ -41,6 +41,8 @@ Public Class LogIn
             txtPass.Clear()
             cboRole.Text = Nothing
         End If
+
+        dbCON.Close()
     End Sub
 
     Private Sub lblSignUp_Click(sender As Object, e As EventArgs) Handles lblSignUp.Click

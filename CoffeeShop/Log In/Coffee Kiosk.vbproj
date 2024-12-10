@@ -91,12 +91,6 @@
     <Compile Include="CashierCheckout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmManageCoffee.Designer.vb">
-      <DependentUpon>frmManageCoffee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmManageCoffee.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LogIn.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -155,9 +149,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashierCheckout.resx">
       <DependentUpon>CashierCheckout.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmManageCoffee.resx">
-      <DependentUpon>frmManageCoffee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.vb</DependentUpon>
